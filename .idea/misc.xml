@@ -12,10 +12,11 @@
         <entry key="..\:/Users/User/AndroidStudioProjects/SimpleNotes/app/src/main/res/layout/activity_add_note.xml" value="0.25" />
         <entry key="..\:/Users/User/AndroidStudioProjects/SimpleNotes/app/src/main/res/layout/activity_details.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/User/AndroidStudioProjects/SimpleNotes/app/src/main/res/layout/activity_edit.xml" value="0.36666666666666664" />
-        <entry key="..\:/Users/User/AndroidStudioProjects/SimpleNotes/app/src/main/res/layout/activity_main.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/SimpleNotes/app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="..\:/Users/User/AndroidStudioProjects/SimpleNotes/app/src/main/res/layout/custom_list_view.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/User/AndroidStudioProjects/SimpleNotes/app/src/main/res/menu/add_menu.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/User/AndroidStudioProjects/SimpleNotes/app/src/main/res/menu/edit_menu.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/SimpleNotes/app/src/main/res/menu/main_acivity_menu.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/User/AndroidStudioProjects/SimpleNotes/app/src/main/res/menu/only_delete_menu.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/User/AndroidStudioProjects/SimpleNotes/app/src/main/res/menu/save_menu.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/User/AndroidStudioProjects/SimpleNotes/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.357" />
