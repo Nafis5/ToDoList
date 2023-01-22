@@ -12,9 +12,12 @@ import com.google.android.gms.ads.interstitial.InterstitialAd;
 import com.google.android.gms.ads.interstitial.InterstitialAdLoadCallback;
 
 public class AdManager {
-    static InterstitialAd mInterstitialAd;
+    static InterstitialAd lowInterstitialAd;
+    static  InterstitialAd highInterstitialAd;
     private Context ctx;
-    private String adUnitID="ca-app-pub-3103198316569371/8307918328";
+    private final String adUnitIDLow="ca-app-pub-3940256099942544/8691691433";
+    private final String adUnitIdHigh="ca-app-pub-3940256099942544/1033173712";
+
     public AdManager(Context ctx){
         this.ctx=ctx;
 
@@ -23,45 +26,97 @@ public class AdManager {
 
     public static InterstitialAd getad(){
 
-        return mInterstitialAd;
+        if(highInterstitialAd!=null) return highInterstitialAd;
+        return lowInterstitialAd;
     }
 
 
-    public  void loadInterstial(){
-        AdRequest adRequest = new AdRequest.Builder().build();
-
-        mInterstitialAd.load(ctx,adUnitID, adRequest, new InterstitialAdLoadCallback() {
-
-            @Override
-            public void onAdFailedToLoad(@NonNull LoadAdError loadAdError) {
-                mInterstitialAd=null;
-
-
-            }
-
-            @Override
-            public void onAdLoaded(@NonNull InterstitialAd interstitialAd) {
-                mInterstitialAd = interstitialAd;
-                interstitialAd.setFullScreenContentCallback(new FullScreenContentCallback() {
-                    @Override
-                    public void onAdDismissedFullScreenContent() {
-                        mInterstitialAd=null;
-
-                    }
-
-                    @Override
-                    public void onAdFailedToShowFullScreenContent(@NonNull AdError adError) {
-                        mInterstitialAd=null;
-
-
-                    }
-                });
-            }
-        });
+    public void loadInterstial() {
+        if(highInterstitialAd==null) loadAdHigh();
+        if(lowInterstitialAd==null) loadAdLow();
 
 
 
     }
+
+    private void loadAdLow() {
+        if (lowInterstitialAd == null) {
+
+
+            AdRequest adRequest = new AdRequest.Builder().build();
+
+            lowInterstitialAd.load(ctx,adUnitIDLow, adRequest, new InterstitialAdLoadCallback() {
+
+                @Override
+                public void onAdFailedToLoad(@NonNull LoadAdError loadAdError) {
+                    lowInterstitialAd = null;
+
+
+                }
+
+                @Override
+                public void onAdLoaded(@NonNull InterstitialAd interstitialAd) {
+                    lowInterstitialAd = interstitialAd;
+                    interstitialAd.setFullScreenContentCallback(new FullScreenContentCallback() {
+                        @Override
+                        public void onAdDismissedFullScreenContent() {
+                            lowInterstitialAd = null;
+
+                        }
+
+                        @Override
+                        public void onAdFailedToShowFullScreenContent(@NonNull AdError adError) {
+                            lowInterstitialAd = null;
+
+
+                        }
+                    });
+                }
+            });
+        }
+    }
+
+    private void loadAdHigh() {
+        if (highInterstitialAd == null) {
+
+
+            AdRequest adRequest = new AdRequest.Builder().build();
+
+            highInterstitialAd.load(ctx,adUnitIdHigh, adRequest, new InterstitialAdLoadCallback() {
+
+                @Override
+                public void onAdFailedToLoad(@NonNull LoadAdError loadAdError) {
+                    highInterstitialAd = null;
+
+
+                }
+
+                @Override
+                public void onAdLoaded(@NonNull InterstitialAd interstitialAd) {
+                    highInterstitialAd = interstitialAd;
+                    interstitialAd.setFullScreenContentCallback(new FullScreenContentCallback() {
+                        @Override
+                        public void onAdDismissedFullScreenContent() {
+                            highInterstitialAd = null;
+
+                        }
+
+                        @Override
+                        public void onAdFailedToShowFullScreenContent(@NonNull AdError adError) {
+                            highInterstitialAd = null;
+
+
+                        }
+                    });
+                }
+            });
+        }
+    }
+
+
+
+
+
 
 
 }

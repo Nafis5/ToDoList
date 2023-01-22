@@ -38,7 +38,7 @@ public class Details extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_details);
         adManager = new AdManager(this);
-        adManager.loadInterstial();
+       // adManager.loadInterstial();
         adi = adManager.getad();
         showInterstial();
         toolbar = findViewById(R.id.toolbar);

@@ -39,7 +39,8 @@ public class addNote extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_note);
           adManager=new AdManager(this);
-          adManager.loadInterstial();
+        //  if(adManager.isAdNULL()) adManager.loadInterstial();
+
           adi=adManager.getad();
           showInterstial();
 
@@ -105,6 +106,7 @@ public class addNote extends AppCompatActivity {
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
 
         if(item.getItemId()==R.id.save) {
+
             Note note=new Note(noteTitle.getText().toString(),noteDetails.getText().toString(),todaysDate,currentTime);
             NoteDatabase db=new NoteDatabase(this);
             db.addNote(note);
