@@ -15,8 +15,8 @@ public class AdManager {
     static InterstitialAd lowInterstitialAd;
     static  InterstitialAd highInterstitialAd;
     private Context ctx;
-    private final String adUnitIDLow="ca-app-pub-3940256099942544/8691691433";
-    private final String adUnitIdHigh="ca-app-pub-3940256099942544/1033173712";
+    private final String adUnitIDLow="ca-app-pub-3103198316569371/8307918328";
+    private final String adUnitIdHigh="ca-app-pub-3103198316569371/8832558006";
 
     public AdManager(Context ctx){
         this.ctx=ctx;

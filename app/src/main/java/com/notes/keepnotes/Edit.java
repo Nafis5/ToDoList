@@ -82,10 +82,10 @@ public class Edit extends AppCompatActivity {
           note.setTime(currentTime);
           db.editnote(note);
 
-          //goToMain();
-          Intent i=new Intent(getApplicationContext(),Details.class);
+          goToMain();
+         /* Intent i=new Intent(getApplicationContext(),Details.class);
           i.putExtra("ID",note.getId());
-          startActivity(i);
+          startActivity(i);*/
             Toast.makeText(this,"Note updated",Toast.LENGTH_SHORT).show();
         }
 
