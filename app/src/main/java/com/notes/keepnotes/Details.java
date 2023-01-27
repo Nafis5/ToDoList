@@ -40,6 +40,7 @@ public class Details extends AppCompatActivity {
         adManager = new AdManager(this);
        // adManager.loadInterstial();
         adi = adManager.getad();
+
         showInterstial();
         toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);

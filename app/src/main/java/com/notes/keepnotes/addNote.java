@@ -38,11 +38,11 @@ public class addNote extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_note);
-          adManager=new AdManager(this);
+        adManager=new AdManager(this);
         //  if(adManager.isAdNULL()) adManager.loadInterstial();
 
-          adi=adManager.getad();
-          showInterstial();
+        adi=adManager.getad();
+        showInterstial();
 
 
         toolbar=findViewById(R.id.toolbar);
@@ -73,9 +73,9 @@ public class addNote extends AppCompatActivity {
 
             @Override
             public void onTextChanged(CharSequence s, int start, int before, int count) {
-                   if(s.length()!=0){
-                       //getSupportActionBar().setTitle(s);
-                   }
+                if(s.length()!=0){
+                    //getSupportActionBar().setTitle(s);
+                }
             }
 
             @Override
@@ -87,7 +87,7 @@ public class addNote extends AppCompatActivity {
         c=Calendar.getInstance();
         todaysDate=c.get(Calendar.DAY_OF_MONTH)+"/"+c.get(Calendar.MONTH+1)+"/"+ c.get(Calendar.YEAR);
         currentTime=pad(c.get(Calendar.HOUR))+":"+pad(c.get(Calendar.MINUTE));
-       // Log.d("calender","Date and Time"+todaysDate+"and"+currentTime);
+        // Log.d("calender","Date and Time"+todaysDate+"and"+currentTime);
 
     }
     private String pad(int i){
@@ -132,7 +132,7 @@ public class addNote extends AppCompatActivity {
             adi.show(this);
         }
         else{
-           // Toast.makeText(this,"Ad not loaded",Toast.LENGTH_SHORT).show();
+            // Toast.makeText(this,"Ad not loaded",Toast.LENGTH_SHORT).show();
             adManager.loadInterstial();
         }
 

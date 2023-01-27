@@ -19,6 +19,8 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
     MainActivity mainActivity;
 
 
+
+
     Adapter(Context context,List<Note> notes){
         this.layoutInflater=LayoutInflater.from(context);
         this.notes=notes;
@@ -83,6 +85,8 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
 
 
                     if(!mainActivity.is_in_action_mode) {
+
+
 
                         Intent i = new Intent(v.getContext(), Details.class);
                         i.putExtra("ID", notes.get(getAdapterPosition()).getId());
