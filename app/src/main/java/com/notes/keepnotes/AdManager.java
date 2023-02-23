@@ -1,7 +1,6 @@
 package com.notes.keepnotes;
 
 import android.content.Context;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 
@@ -14,211 +13,110 @@ import com.google.android.gms.ads.interstitial.InterstitialAdLoadCallback;
 
 public class AdManager {
     static InterstitialAd lowInterstitialAd;
-    static InterstitialAd highInterstitialAd;
+    static  InterstitialAd highInterstitialAd;
     private Context ctx;
+    private final String adUnitIDLow="ca-app-pub-3940256099942544/1033173712";
+    private final String adUnitIdHigh="ca-app-pub-3940256099942544/1033173712";
 
-    private  final String highAdunit1="ca-app-pub-3103198316569371/7514193162";
-    private  final String highAdunit2="ca-app-pub-3103198316569371/6201111498";
-    private  final String highAdunit3="ca-app-pub-3103198316569371/7046439244";
-    private  final String highAdunit4="ca-app-pub-3103198316569371/5492850279";
-    static InterstitialAd interstitialAd1;
-    static InterstitialAd interstitialAd2;
-    static InterstitialAd interstitialAd3;
-    static InterstitialAd interstitialAd4;
-
-    public AdManager(Context ctx) {
-        this.ctx = ctx;
+    public AdManager(Context ctx){
+        this.ctx=ctx;
 
 
     }
 
-   /* public static InterstitialAd getad() {
-
-        if (highInterstitialAd != null) return highInterstitialAd;
-        return lowInterstitialAd;
-    }*/
     public static InterstitialAd getad(){
-        if(interstitialAd1 !=null) return interstitialAd1;
-        else if(interstitialAd2 !=null) return interstitialAd2;
-        else if(interstitialAd3 !=null) return interstitialAd3;
-        else return interstitialAd4;
 
+        if(highInterstitialAd!=null) return highInterstitialAd;
+        return lowInterstitialAd;
     }
 
 
     public void loadInterstial() {
-        //   if(highInterstitialAd==null) loadAdHigh();
-        // if(lowInterstitialAd==null) loadAdLow();
-        loadAds1(highAdunit1);
-        loadAds2(highAdunit2);
-        loadAds3(highAdunit3);
-        loadAds4(highAdunit4);
+        if(highInterstitialAd==null) loadAdHigh();
+        if(lowInterstitialAd==null) loadAdLow();
 
 
 
     }
 
-
-
-    private void loadAds1(String adUnit) {
-        if (interstitialAd1 == null) {
+    private void loadAdLow() {
+        if (lowInterstitialAd == null & highInterstitialAd==null) {
 
 
             AdRequest adRequest = new AdRequest.Builder().build();
 
-            InterstitialAd.load(ctx, adUnit, adRequest, new InterstitialAdLoadCallback() {
+            InterstitialAd.load(ctx,adUnitIDLow, adRequest, new InterstitialAdLoadCallback() {
 
                 @Override
                 public void onAdFailedToLoad(@NonNull LoadAdError loadAdError) {
-                    interstitialAd1 = null;
+                    lowInterstitialAd = null;
 
 
                 }
 
                 @Override
                 public void onAdLoaded(@NonNull InterstitialAd interstitialAd) {
-                    interstitialAd1 = interstitialAd;
-                    interstitialAd1.setFullScreenContentCallback(new FullScreenContentCallback() {
+                    lowInterstitialAd = interstitialAd;
+                    lowInterstitialAd.setFullScreenContentCallback(new FullScreenContentCallback() {
                         @Override
                         public void onAdDismissedFullScreenContent() {
-                            interstitialAd1 = null;
+                            lowInterstitialAd = null;
 
                         }
 
                         @Override
                         public void onAdFailedToShowFullScreenContent(@NonNull AdError adError) {
-                            interstitialAd1 = null;
+                            lowInterstitialAd = null;
 
 
                         }
                     });
                 }
             });
-
-
         }
     }
 
-    private void loadAds2(String adUnit) {
-        if (interstitialAd2 == null) {
+    private void loadAdHigh() {
+        if (highInterstitialAd == null) {
 
 
             AdRequest adRequest = new AdRequest.Builder().build();
 
-            InterstitialAd.load(ctx, adUnit, adRequest, new InterstitialAdLoadCallback() {
+            InterstitialAd.load(ctx,adUnitIdHigh, adRequest, new InterstitialAdLoadCallback() {
 
                 @Override
                 public void onAdFailedToLoad(@NonNull LoadAdError loadAdError) {
-                    interstitialAd2 = null;
+                    highInterstitialAd = null;
 
 
                 }
 
                 @Override
                 public void onAdLoaded(@NonNull InterstitialAd interstitialAd) {
-                    interstitialAd2 = interstitialAd;
-                    interstitialAd2.setFullScreenContentCallback(new FullScreenContentCallback() {
+                    highInterstitialAd = interstitialAd;
+                    highInterstitialAd.setFullScreenContentCallback(new FullScreenContentCallback() {
                         @Override
                         public void onAdDismissedFullScreenContent() {
-                            interstitialAd2 = null;
+                            highInterstitialAd = null;
 
                         }
 
                         @Override
                         public void onAdFailedToShowFullScreenContent(@NonNull AdError adError) {
-                            interstitialAd2 = null;
+                            highInterstitialAd = null;
 
 
                         }
                     });
                 }
             });
-
-
-        }
-    }
-    private void loadAds3(String adUnit) {
-        if (interstitialAd3 == null) {
-
-
-            AdRequest adRequest = new AdRequest.Builder().build();
-
-            InterstitialAd.load(ctx, adUnit, adRequest, new InterstitialAdLoadCallback() {
-
-                @Override
-                public void onAdFailedToLoad(@NonNull LoadAdError loadAdError) {
-                    interstitialAd3 = null;
-
-
-                }
-
-                @Override
-                public void onAdLoaded(@NonNull InterstitialAd interstitialAd) {
-                    interstitialAd3 = interstitialAd;
-                    interstitialAd3.setFullScreenContentCallback(new FullScreenContentCallback() {
-                        @Override
-                        public void onAdDismissedFullScreenContent() {
-                            interstitialAd3 = null;
-
-                        }
-
-                        @Override
-                        public void onAdFailedToShowFullScreenContent(@NonNull AdError adError) {
-                            interstitialAd3 = null;
-
-
-                        }
-                    });
-                }
-            });
-
-
         }
     }
 
-    private void loadAds4(String adUnit) {
-        if (interstitialAd4 == null) {
 
 
-            AdRequest adRequest = new AdRequest.Builder().build();
-
-            InterstitialAd.load(ctx, adUnit, adRequest, new InterstitialAdLoadCallback() {
-
-                @Override
-                public void onAdFailedToLoad(@NonNull LoadAdError loadAdError) {
-                    interstitialAd4 = null;
 
 
-                }
 
-                @Override
-                public void onAdLoaded(@NonNull InterstitialAd interstitialAd) {
-                    interstitialAd4 = interstitialAd;
-                    interstitialAd4.setFullScreenContentCallback(new FullScreenContentCallback() {
-                        @Override
-                        public void onAdDismissedFullScreenContent() {
-                            interstitialAd4 = null;
-
-                        }
-
-                        @Override
-                        public void onAdFailedToShowFullScreenContent(@NonNull AdError adError) {
-                            interstitialAd4 = null;
-
-
-                        }
-                    });
-                }
-            });
-
-
-        }
-    }
 
 }
-
-
-
-
-
-
