@@ -17,6 +17,7 @@ import android.widget.CheckBox;
 import android.widget.Toast;
 
 
+import com.google.android.gms.ads.interstitial.InterstitialAd;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -41,6 +42,10 @@ public class MainActivity extends AppCompatActivity implements View.OnLongClickL
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         admanager=new AdManager(this);
+        Intent intent = getIntent();
+        if(intent.getBooleanExtra("adDekhabo?", false)){
+            showInterstial();
+        }
 
         admanager.loadInterstial();
         toolbar=findViewById(R.id.toolbar);
@@ -56,6 +61,16 @@ public class MainActivity extends AppCompatActivity implements View.OnLongClickL
 
 
 
+
+
+    }
+    private void showInterstial(){
+        InterstitialAd mInterstial=admanager.getad();
+        if(mInterstial!=null){
+
+
+            mInterstial.show(this);
+        }
 
 
     }

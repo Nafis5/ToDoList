@@ -93,6 +93,7 @@ public class Edit extends AppCompatActivity {
     }
     public void goToMain(){
         Intent i=new Intent(this,MainActivity.class);
+        i.putExtra("adDekhabo?",true);
         startActivity(i);
     }
     private String pad(int i){

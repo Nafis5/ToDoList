@@ -30,18 +30,17 @@ public class Details extends AppCompatActivity {
     Note note;
     InterstitialAd adi;
     private AdView mAdView;
-    private AdManager adManager;
+
     AlertDialog.Builder builder;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_details);
-        adManager = new AdManager(this);
-       // adManager.loadInterstial();
-        adi = adManager.getad();
 
-        showInterstial();
+
+
+
         toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         toolbar.setBackgroundColor(Color.parseColor("#000000"));
@@ -83,6 +82,11 @@ public class Details extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        if(item.getItemId() == android.R.id.home){
+
+            goToMain();
+            return true;
+        }
         if (item.getItemId() == R.id.deleteNote) {
             OpenDialogue();
 
@@ -102,20 +106,12 @@ public class Details extends AppCompatActivity {
     }
 
     public void goToMain() {
-        Intent i = new Intent(this, MainActivity.class);
+        Intent i=new Intent(this,MainActivity.class);
+        i.putExtra("adDekhabo?",true);
         startActivity(i);
     }
 
-    private void showInterstial() {
-        if (adi != null) {
 
-
-            adi.show(this);
-        } else {
-            adManager.loadInterstial();
-        }
-
-    }
 
     void OpenDialogue() {
        // builder.setMessage(R.string.dialog_message).setTitle("delete");

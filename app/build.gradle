@@ -9,8 +9,8 @@ android {
         applicationId "com.notes.keepnotes"
         minSdk 23
         targetSdk 31
-        versionCode 13
-        versionName "2.2"
+        versionCode 10
+        versionName "2.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }

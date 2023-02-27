@@ -38,11 +38,7 @@ public class addNote extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_note);
-        adManager=new AdManager(this);
-        //  if(adManager.isAdNULL()) adManager.loadInterstial();
 
-        adi=adManager.getad();
-        showInterstial();
 
 
         toolbar=findViewById(R.id.toolbar);
@@ -112,6 +108,7 @@ public class addNote extends AppCompatActivity {
             db.addNote(note);
             Toast.makeText(this,"Note saved",Toast.LENGTH_SHORT).show();
             goToMain();
+
         }
 
         return  super.onOptionsItemSelected(item);
@@ -123,18 +120,8 @@ public class addNote extends AppCompatActivity {
     }
     public void goToMain(){
         Intent i=new Intent(this,MainActivity.class);
+        i.putExtra("adDekhabo?",true);
         startActivity(i);
     }
-    private void showInterstial(){
-        if(adi!=null){
 
-
-            adi.show(this);
-        }
-        else{
-            // Toast.makeText(this,"Ad not loaded",Toast.LENGTH_SHORT).show();
-            adManager.loadInterstial();
-        }
-
-    }
 }
