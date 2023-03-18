@@ -14,7 +14,7 @@
 
         <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"
-            android:value="@string/sampleAdmobId" />
+            android:value="@string/admobRealADId" />
 
         <activity android:name=".Edit" />
         <activity android:name=".Details">
