@@ -18,6 +18,7 @@ import android.widget.Toast;
 
 
 import com.google.android.gms.ads.interstitial.InterstitialAd;
+import com.google.firebase.analytics.FirebaseAnalytics;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -33,6 +34,7 @@ public class MainActivity extends AppCompatActivity implements View.OnLongClickL
     List<Long> deletelist=new ArrayList();
     NoteDatabase db;
     AdManager admanager;
+    private FirebaseAnalytics mFirebaseAnalytics;
 
 
 
@@ -58,6 +60,7 @@ public class MainActivity extends AppCompatActivity implements View.OnLongClickL
         notes=db.getAllNotes();
         adapter=new Adapter(this,notes);
         recylerview.setAdapter(adapter);
+        mFirebaseAnalytics = FirebaseAnalytics.getInstance(this);
 
 
 

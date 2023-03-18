@@ -18,10 +18,10 @@ public class AdManager {
     static InterstitialAd highInterstitialAd;
     private Context ctx;
 
-    private  final String highAdunit1="ca-app-pub-3103198316569371/9666833345";
-    private  final String highAdunit2="ca-app-pub-3103198316569371/1762649944";
-    private  final String highAdunit3="ca-app-pub-3103198316569371/2309444858";
-    private  final String highAdunit4="ca-app-pub-3103198316569371/9996363188";
+    private  final String highAdunit1="ca-app-pub-3940256099942544/8691691433";
+    private  final String highAdunit2="ca-app-pub-3940256099942544/8691691433";
+    private  final String highAdunit3="ca-app-pub-3940256099942544/8691691433";
+    private  final String highAdunit4="ca-app-pub-3940256099942544/1033173712";
     static InterstitialAd interstitialAd1;
     static InterstitialAd interstitialAd2;
     static InterstitialAd interstitialAd3;
@@ -49,14 +49,16 @@ public class AdManager {
     public void loadInterstial() {
         //   if(highInterstitialAd==null) loadAdHigh();
         // if(lowInterstitialAd==null) loadAdLow();
-        if(isAllAdsNull()) {
+        if(isAllHighAdsNull()) {
 
             loadAds1(highAdunit1);
             loadAds2(highAdunit2);
             loadAds3(highAdunit3);
-            loadAds4(highAdunit4);
+            if(highAdunit4==null) loadAds4(highAdunit4);
+
 
         }
+
 
 
     }
@@ -66,8 +68,8 @@ public class AdManager {
 
 
 
-    private boolean isAllAdsNull(){
-        return interstitialAd1 == null & interstitialAd2==null & interstitialAd3==null & interstitialAd4==null;
+    private boolean isAllHighAdsNull(){
+        return interstitialAd1 == null & interstitialAd2==null & interstitialAd3==null;
     }
 
 
