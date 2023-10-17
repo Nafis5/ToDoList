@@ -17,11 +17,20 @@ public class AdManager {
     static InterstitialAd lowInterstitialAd;
     static InterstitialAd highInterstitialAd;
     private Context ctx;
+    private static boolean adShowPermission=true;
 
-    private  final String highAdunit1="ca-app-pub-3940256099942544/8691691433";
+    private  final String highAdunit1="ca-app-pub-3103198316569371/8832558006";
+    private  final String highAdunit2="ca-app-pub-3103198316569371/7514193162";
+    private  final String highAdunit3="ca-app-pub-3103198316569371/6201111498";
+    private  final String highAdunit4="ca-app-pub-3103198316569371/8307918328";
+
+    //below are test ad units
+ /* private  final String highAdunit1="ca-app-pub-3940256099942544/8691691433";
     private  final String highAdunit2="ca-app-pub-3940256099942544/8691691433";
     private  final String highAdunit3="ca-app-pub-3940256099942544/8691691433";
-    private  final String highAdunit4="ca-app-pub-3940256099942544/1033173712";
+    private  final String highAdunit4="ca-app-pub-3940256099942544/1033173712";*/
+
+
     static InterstitialAd interstitialAd1;
     static InterstitialAd interstitialAd2;
     static InterstitialAd interstitialAd3;
@@ -31,6 +40,9 @@ public class AdManager {
         this.ctx = ctx;
 
 
+    }
+    void setAdShowPermission(boolean adShowPermission){
+        this.adShowPermission=adShowPermission;
     }
 
     /* public static InterstitialAd getad() {
@@ -49,7 +61,7 @@ public class AdManager {
     public void loadInterstial() {
         //   if(highInterstitialAd==null) loadAdHigh();
         // if(lowInterstitialAd==null) loadAdLow();
-        if(isAllHighAdsNull()) {
+        if(isAllHighAdsNull() & adShowPermission) {
 
             loadAds1(highAdunit1);
             loadAds2(highAdunit2);

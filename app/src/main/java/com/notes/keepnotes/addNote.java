@@ -5,6 +5,7 @@ import android.graphics.Color;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -81,9 +82,11 @@ public class addNote extends AppCompatActivity {
         });
         //get time and date
         c=Calendar.getInstance();
-        todaysDate=c.get(Calendar.DAY_OF_MONTH)+"/"+c.get(Calendar.MONTH+1)+"/"+ c.get(Calendar.YEAR);
+
         currentTime=pad(c.get(Calendar.HOUR))+":"+pad(c.get(Calendar.MINUTE));
-        // Log.d("calender","Date and Time"+todaysDate+"and"+currentTime);
+        todaysDate=c.get(Calendar.DAY_OF_MONTH) + "/" + (Calendar.getInstance().get(Calendar.MONTH) + 1) + "/" + Calendar.getInstance().get(Calendar.YEAR);
+
+         Log.d("calender","Date and Time"+todaysDate+"and"+currentTime);
 
     }
     private String pad(int i){
@@ -103,10 +106,17 @@ public class addNote extends AppCompatActivity {
 
         if(item.getItemId()==R.id.save) {
 
-            Note note=new Note(noteTitle.getText().toString(),noteDetails.getText().toString(),todaysDate,currentTime);
-            NoteDatabase db=new NoteDatabase(this);
-            db.addNote(note);
-            Toast.makeText(this,"Note saved",Toast.LENGTH_SHORT).show();
+            if(noteTitle.getText().toString().length()>0 || noteDetails.getText().toString().length()>0 ) {
+
+                Note note = new Note(noteTitle.getText().toString(), noteDetails.getText().toString(), todaysDate, currentTime);
+                NoteDatabase db = new NoteDatabase(this);
+                db.addNote(note);
+                Toast.makeText(this, "Note saved", Toast.LENGTH_SHORT).show();
+
+            }
+            else{
+                Toast.makeText(this,"Empty notes can't be saved",Toast.LENGTH_SHORT).show();
+            }
             goToMain();
 
         }
@@ -123,5 +133,6 @@ public class addNote extends AppCompatActivity {
         i.putExtra("adDekhabo?",true);
         startActivity(i);
     }
+
 
 }

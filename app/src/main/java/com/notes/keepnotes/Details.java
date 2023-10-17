@@ -4,6 +4,8 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.Looper;
 import android.text.method.ScrollingMovementMethod;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -23,6 +25,8 @@ import com.google.android.gms.ads.initialization.InitializationStatus;
 import com.google.android.gms.ads.initialization.OnInitializationCompleteListener;
 import com.google.android.gms.ads.interstitial.InterstitialAd;
 
+import java.util.Calendar;
+
 public class Details extends AppCompatActivity {
     Toolbar toolbar;
     TextView detailstext;
@@ -30,13 +34,18 @@ public class Details extends AppCompatActivity {
     Note note;
     InterstitialAd adi;
     private AdView mAdView;
-
+    private AdManager adManager;
     AlertDialog.Builder builder;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_details);
+        adManager = new AdManager(this);
+        // adManager.loadInterstial();
+        adi = adManager.getad();
+
+        showInterstial();
 
 
 
@@ -65,12 +74,24 @@ public class Details extends AppCompatActivity {
             public void onInitializationComplete(InitializationStatus initializationStatus) {
             }
         });
-        mAdView = findViewById(R.id.adView);
-        AdRequest adRequest = new AdRequest.Builder().build();
-        mAdView.loadAd(adRequest);
+        mAdView = findViewById(R.id.adView2);
+       /* AdRequest adRequest = new AdRequest.Builder().build();
+        mAdView.loadAd(adRequest);*/
+        Handler handler = new Handler(Looper.getMainLooper());
+        handler.postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                loadBannerAd();
+            }
+        }, 15000); // 60000 milliseconds = 1 minute
+
 
         //banner stuff end here
 
+    }
+    private void loadBannerAd(){
+        AdRequest adRequest = new AdRequest.Builder().build();
+        mAdView.loadAd(adRequest);
     }
 
     @Override
@@ -107,7 +128,7 @@ public class Details extends AppCompatActivity {
 
     public void goToMain() {
         Intent i=new Intent(this,MainActivity.class);
-        i.putExtra("adDekhabo?",true);
+       // i.putExtra("adDekhabo?",true);
         startActivity(i);
     }
 
@@ -144,11 +165,22 @@ public class Details extends AppCompatActivity {
         alert.setTitle("Delete");
         alert.show();
     }
+    private void showInterstial() {
+        if (adi != null) {
+
+
+            adi.show(this);
+        } else {
+            adManager.loadInterstial();
+        }
+
+    }
 
     @Override
     public void onBackPressed() {
         goToMain();
     }
+
 }
 
 

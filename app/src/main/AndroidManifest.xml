@@ -1,41 +1,56 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.notes.keepnotes">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
 
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="com.samsung.android.providers.context.permission.WRITE_USE_APP_FEATURE_SURVEY"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
+   <!--   <uses-permission android:name="com.samsung.android.providers.context.permission.WRITE_USE_APP_FEATURE_SURVEY"/>-->
 
-    <application
-        android:allowBackup="true"
-        android:icon="@drawable/note_icon_3"
-        android:label="@string/app_name"
-        android:supportsRtl="true"
-        android:theme="@style/AppTheme">
 
-        <meta-data
-            android:name="com.google.android.gms.ads.APPLICATION_ID"
-            android:value="@string/admobRealADId" />
 
-        <activity android:name=".Edit" />
-        <activity android:name=".Details">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.notes.keepnotes.MainActivity" />
-        </activity>
-        <activity android:name=".addNote">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.notes.keepnotes.MainActivity" />
-        </activity>
-        <activity
-            android:name=".MainActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-    </application>
 
-</manifest>
+
+
+       <application
+           android:allowBackup="true"
+           android:icon="@drawable/note_icon_3"
+           android:label="@string/app_name"
+           android:supportsRtl="true"
+           android:theme="@style/AppTheme">
+
+
+
+           <activity
+               android:name=".Subscription"
+               android:exported="false" />
+
+           <meta-data
+               android:name="com.google.android.gms.ads.APPLICATION_ID"
+               android:value="@string/admobRealADId" />
+
+           <activity android:name=".Edit" />
+           <activity android:name=".Details">
+               <meta-data
+                   android:name="android.support.PARENT_ACTIVITY"
+                   android:value="com.notes.keepnotes.MainActivity" />
+           </activity>
+           <activity android:name=".addNote">
+               <meta-data
+                   android:name="android.support.PARENT_ACTIVITY"
+                   android:value="com.notes.keepnotes.MainActivity" />
+           </activity>
+           <activity
+               android:name=".MainActivity"
+               android:exported="true">
+               <intent-filter>
+                   <action android:name="android.intent.action.MAIN" />
+
+                   <category android:name="android.intent.category.LAUNCHER" />
+               </intent-filter>
+           </activity>
+
+
+       </application>
+
+   </manifest>

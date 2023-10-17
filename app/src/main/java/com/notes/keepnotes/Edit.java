@@ -7,6 +7,8 @@ import androidx.appcompat.widget.Toolbar;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.Looper;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -50,7 +52,8 @@ public class Edit extends AppCompatActivity {
         noteTitle.setText(note.getTitle());
         noteDetails.setText(note.getContent());
         c=Calendar.getInstance();
-        todaysDate=c.get(Calendar.DAY_OF_MONTH)+"/"+c.get(Calendar.MONTH+1)+"/"+ c.get(Calendar.YEAR);
+        todaysDate =c.get(Calendar.DAY_OF_MONTH) + "/" + (Calendar.getInstance().get(Calendar.MONTH) + 1) + "/" + Calendar.getInstance().get(Calendar.YEAR);
+
         currentTime=pad(c.get(Calendar.HOUR))+":"+pad(c.get(Calendar.MINUTE));
 
         //banner add stufss
@@ -63,8 +66,10 @@ public class Edit extends AppCompatActivity {
         AdRequest adRequest = new AdRequest.Builder().build();
         mAdView.loadAd(adRequest);
 
+
         //banner stuff end here
     }
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -76,17 +81,21 @@ public class Edit extends AppCompatActivity {
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
 
         if(item.getItemId()==R.id.save) {
-          note.setTitle(noteTitle.getText().toString());
-          note.setContent(noteDetails.getText().toString());
-          note.setDate(todaysDate);
-          note.setTime(currentTime);
-          db.editnote(note);
+            if(noteTitle.getText().toString().length()>0 || noteDetails.getText().toString().length()>0 ){
+                note.setTitle(noteTitle.getText().toString());
+                note.setContent(noteDetails.getText().toString());
+                note.setDate(todaysDate);
+                note.setTime(currentTime);
+                db.editnote(note);
+                Toast.makeText(this,"Note updated",Toast.LENGTH_SHORT).show();
 
-          goToMain();
-         /* Intent i=new Intent(getApplicationContext(),Details.class);
-          i.putExtra("ID",note.getId());
-          startActivity(i);*/
-            Toast.makeText(this,"Note updated",Toast.LENGTH_SHORT).show();
+            }
+            else {
+                db.deleteNote(note.getId());
+                Toast.makeText(this,"Empty notes can't be saved",Toast.LENGTH_SHORT).show();
+            }
+            goToMain();
+
         }
 
         return  super.onOptionsItemSelected(item);
@@ -101,4 +110,5 @@ public class Edit extends AppCompatActivity {
         return String.valueOf(i);
 
     }
+
 }

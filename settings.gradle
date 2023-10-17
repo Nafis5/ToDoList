@@ -14,3 +14,4 @@ dependencyResolutionManagement {
 }
 rootProject.name = "SimpleNotes"
 include ':app'
+include ':IAP6Helper'

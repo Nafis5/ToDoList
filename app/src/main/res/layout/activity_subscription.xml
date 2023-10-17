@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Subscription"
+    android:background="@drawable/subscription_background"
+
+    >
+    <ImageButton
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/error_netural"
+        android:layout_margin="10dp"
+        android:onClick="onCrossClicked"
+        />
+
+
+
+    <Button
+        android:id="@+id/buyNow_button"
+        android:layout_width="188dp"
+        android:layout_height="56dp"
+        android:text="Buy Now"
+        android:onClick="onBuyNowClicked"
+        android:background="@drawable/oval_button"
+        android:textColor="#FFFFFF"
+        android:layout_gravity="center_horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"
+        />
+
+</RelativeLayout>

@@ -9,7 +9,13 @@ public class Note {
 
     Note(String title,String content,String date, String time){
         this.title = title;
-        this.content = content;
+        if(content==null){
+            this.content="";
+        }
+        else{
+            this.content = content;
+        }
+
         this.date = date;
         this.time = time;
     }
@@ -42,6 +48,7 @@ public class Note {
     }
 
     public String getContent() {
+        if(content==null)content="";
         return content;
     }
 
