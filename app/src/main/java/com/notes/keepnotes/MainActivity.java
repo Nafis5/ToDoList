@@ -79,14 +79,16 @@ public class MainActivity extends AppCompatActivity implements View.OnLongClickL
         AppOpenDateManager.setFirstOpenDate(this);
 
 
-        admanager=new AdManager(this);
 
-        if(AppOpenDateManager.isFirstOpenToday(this)){
-            //set show ad to false
-            admanager.setAdShowPermission(false);
-        }else{
+        admanager=new AdManager(this);
+       // admanager.loadInterstial();
+
+        if( appOpenNumber>=1 ){
 
             admanager.setAdShowPermission(true);
+        }else{
+            //set show ad to false
+            admanager.setAdShowPermission(false);
         }
         Intent intent = getIntent();
         if(intent.getBooleanExtra("adDekhabo?", false)){
@@ -106,6 +108,7 @@ public class MainActivity extends AppCompatActivity implements View.OnLongClickL
         setSupportActionBar(toolbar);
         toolbar.setBackgroundColor(Color.parseColor("#000000"));
         toolbar.setTitleTextColor(Color.parseColor("#FFFFFF"));
+
         recylerview=findViewById(R.id.allNotesList);
         recylerview.setLayoutManager(new LinearLayoutManager(this));
         db=new NoteDatabase(this);
@@ -367,7 +370,15 @@ public class MainActivity extends AppCompatActivity implements View.OnLongClickL
     @Override
     protected void onStart() {
         super.onStart();
+        admanager.loadInterstial();
         appOpenCounter.incrementAppOpen();
+    }
+    @Override
+    protected void onPostResume() {
+        super.onPostResume();
+        admanager.loadInterstial();
+
+
     }
 
 }

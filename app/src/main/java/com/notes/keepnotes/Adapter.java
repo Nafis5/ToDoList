@@ -88,7 +88,7 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
 
 
 
-                        Intent i = new Intent(v.getContext(), Details.class);
+                        Intent i = new Intent(v.getContext(), Edit.class);
                         i.putExtra("ID", notes.get(getAdapterPosition()).getId());
                         v.getContext().startActivity(i);
                     }

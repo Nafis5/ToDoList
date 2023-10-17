@@ -42,7 +42,7 @@ public class Details extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_details);
         adManager = new AdManager(this);
-        // adManager.loadInterstial();
+        adManager.loadInterstial();
         adi = adManager.getad();
 
         showInterstial();
@@ -83,7 +83,7 @@ public class Details extends AppCompatActivity {
             public void run() {
                 loadBannerAd();
             }
-        }, 15000); // 60000 milliseconds = 1 minute
+        }, 20000); // 60000 milliseconds = 1 minute
 
 
         //banner stuff end here
@@ -179,6 +179,13 @@ public class Details extends AppCompatActivity {
     @Override
     public void onBackPressed() {
         goToMain();
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        loadBannerAd();
+
     }
 
 }

@@ -3,6 +3,8 @@ package com.notes.keepnotes;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.Looper;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.util.Log;
@@ -34,14 +36,16 @@ public class addNote extends AppCompatActivity {
     InterstitialAd adi;
     AdManager adManager;
     private AdView mAdView;
+    AdManager admanager;
+    AdRequest adRequest;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_note);
 
-
-
+        admanager=new AdManager(this);
+        admanager.loadInterstial();
         toolbar=findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         noteTitle=findViewById(R.id.noteTitle);
@@ -57,7 +61,7 @@ public class addNote extends AppCompatActivity {
             }
         });
         mAdView = findViewById(R.id.adView);
-        AdRequest adRequest = new AdRequest.Builder().build();
+        adRequest = new AdRequest.Builder().build();
         mAdView.loadAd(adRequest);
 
         //banner stuff end here
@@ -87,6 +91,7 @@ public class addNote extends AppCompatActivity {
         todaysDate=c.get(Calendar.DAY_OF_MONTH) + "/" + (Calendar.getInstance().get(Calendar.MONTH) + 1) + "/" + Calendar.getInstance().get(Calendar.YEAR);
 
          Log.d("calender","Date and Time"+todaysDate+"and"+currentTime);
+
 
     }
     private String pad(int i){
@@ -132,6 +137,20 @@ public class addNote extends AppCompatActivity {
         Intent i=new Intent(this,MainActivity.class);
         i.putExtra("adDekhabo?",true);
         startActivity(i);
+    }
+    @Override
+    protected void onPostResume() {
+        super.onPostResume();
+        admanager.loadInterstial();
+
+
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        mAdView.loadAd(adRequest);
+        admanager.loadInterstial();
     }
 
 

@@ -32,6 +32,8 @@ public class Edit extends AppCompatActivity {
     NoteDatabase db;
     Note note;
     private AdView mAdView;
+    AdManager admanager;
+    AdRequest adRequest;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,14 +49,18 @@ public class Edit extends AppCompatActivity {
         noteDetails=findViewById(R.id.noteDetails);
         toolbar.setBackgroundColor(Color.parseColor("#000000"));
         getSupportActionBar().setTitle(note.getTitle());
-        //getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
         toolbar.setTitleTextColor(Color.parseColor("#FFFFFF"));
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         noteTitle.setText(note.getTitle());
+
         noteDetails.setText(note.getContent());
         c=Calendar.getInstance();
         todaysDate =c.get(Calendar.DAY_OF_MONTH) + "/" + (Calendar.getInstance().get(Calendar.MONTH) + 1) + "/" + Calendar.getInstance().get(Calendar.YEAR);
 
         currentTime=pad(c.get(Calendar.HOUR))+":"+pad(c.get(Calendar.MINUTE));
+        admanager=new AdManager(this);
+        admanager.loadInterstial();
 
         //banner add stufss
         MobileAds.initialize(this, new OnInitializationCompleteListener() {
@@ -63,11 +69,14 @@ public class Edit extends AppCompatActivity {
             }
         });
         mAdView = findViewById(R.id.adView);
-        AdRequest adRequest = new AdRequest.Builder().build();
+        adRequest = new AdRequest.Builder().build();
         mAdView.loadAd(adRequest);
 
 
         //banner stuff end here
+
+
+
     }
 
 
@@ -97,6 +106,11 @@ public class Edit extends AppCompatActivity {
             goToMain();
 
         }
+        if(item.getItemId() == android.R.id.home){
+
+            goToMain();
+            return true;
+        }
 
         return  super.onOptionsItemSelected(item);
     }
@@ -109,6 +123,21 @@ public class Edit extends AppCompatActivity {
         if(i<10) return "0"+i;
         return String.valueOf(i);
 
+    }
+
+    @Override
+    protected void onPostResume() {
+        super.onPostResume();
+        admanager.loadInterstial();
+
+
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        mAdView.loadAd(adRequest);
+        admanager.loadInterstial();
     }
 
 }
