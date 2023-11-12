@@ -1,6 +1,7 @@
 package com.notes.keepnotes;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.os.Handler;
@@ -39,12 +40,14 @@ public class addNote extends AppCompatActivity {
     AdManager admanager;
     AdRequest adRequest;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_note);
 
         admanager=new AdManager(this);
+
         admanager.loadInterstial();
         toolbar=findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -94,6 +97,7 @@ public class addNote extends AppCompatActivity {
 
 
     }
+
     private String pad(int i){
         if(i<10) return "0"+i;
         return String.valueOf(i);
@@ -124,6 +128,12 @@ public class addNote extends AppCompatActivity {
             }
             goToMain();
 
+        }
+        if(item.getItemId()==R.id.only_delete){
+            Note note = new Note(noteTitle.getText().toString(), noteDetails.getText().toString(), todaysDate, currentTime);
+            NoteDatabase db = new NoteDatabase(this);
+            db.deleteNote(note.getId());
+            goToMain();
         }
 
         return  super.onOptionsItemSelected(item);

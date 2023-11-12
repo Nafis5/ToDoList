@@ -31,16 +31,16 @@ public class AdManager {
     private static int lastAdUnitCallDay = -1;
 
 
-   /* private  final String highAdunit1="ca-app-pub-3103198316569371/9666833345";
-    private  final String highAdunit2="ca-app-pub-3103198316569371/1762649944";
-    private  final String highAdunit3="ca-app-pub-3103198316569371/2309444858";
-    private  final String highAdunit4="ca-app-pub-3103198316569371/3506391394";*/
+    private  final String highAdunit1="ca-app-pub-3103198316569371/8832558006";
+    private  final String highAdunit2="ca-app-pub-3103198316569371/7514193162";
+    private  final String highAdunit3="ca-app-pub-3103198316569371/6201111498";
+    private  final String highAdunit4="ca-app-pub-3103198316569371/8307918328";
 
     //below are test ad unitsprivate
-    private final String highAdunit1="ca-app-pub-3940256099942544/8691691433";
+   /* private final String highAdunit1="ca-app-pub-3940256099942544/8691691433";
     private  final String highAdunit2="ca-app-pub-3940256099942544/8691691433";
     private  final String highAdunit3="ca-app-pub-3940256099942544/8691691433";
-    private  final String highAdunit4="ca-app-pub-3940256099942544/8691691433";
+    private  final String highAdunit4="ca-app-pub-3940256099942544/8691691433";*/
 
 
     static InterstitialAd interstitialAd1;

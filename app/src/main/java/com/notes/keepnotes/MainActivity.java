@@ -83,13 +83,13 @@ public class MainActivity extends AppCompatActivity implements View.OnLongClickL
         admanager=new AdManager(this);
        // admanager.loadInterstial();
 
-        if( appOpenNumber>=1 ){
+       /* if( (appOpenNumber/2)%3 ==0 ){
 
             admanager.setAdShowPermission(true);
         }else{
             //set show ad to false
             admanager.setAdShowPermission(false);
-        }
+        }*/
         Intent intent = getIntent();
         if(intent.getBooleanExtra("adDekhabo?", false)){
             showInterstial();
@@ -101,7 +101,7 @@ public class MainActivity extends AppCompatActivity implements View.OnLongClickL
 
         }
 
-        admanager.loadInterstial();
+       // admanager.loadInterstial();
         mAuth = FirebaseAuth.getInstance();
         signInUserAnonymously();
         toolbar=findViewById(R.id.toolbar);
@@ -370,13 +370,13 @@ public class MainActivity extends AppCompatActivity implements View.OnLongClickL
     @Override
     protected void onStart() {
         super.onStart();
-        admanager.loadInterstial();
+       // admanager.loadInterstial();
         appOpenCounter.incrementAppOpen();
     }
     @Override
     protected void onPostResume() {
         super.onPostResume();
-        admanager.loadInterstial();
+     //   admanager.loadInterstial();
 
 
     }
