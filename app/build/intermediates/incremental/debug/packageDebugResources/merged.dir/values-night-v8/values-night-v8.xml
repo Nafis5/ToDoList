@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="TextColor">#000000</color>
+    <color name="backGroundColor">#FFFFFF</color>
+    <color name="buttonColor">#1A1A1A</color>
+    <color name="colorAccent">#000000</color>
+    <color name="colorPrimary">#000000</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="hintTextColor">#A9A9A9</color>
+    <color name="ic_launcher_background">#ffffff</color>
+    <color name="noteItemColor">#FAFAFA</color>
+    <color name="toolbarColor">#FFFFFF</color>
+    <color name="white">#FFFFFF</color>
+</resources>

@@ -1,0 +1,18 @@
+<lint-module
+    format="1"
+    dir="/Users/nafismahdee/Documents/todolist app/SimpleNotes/app"
+    name=":app"
+    type="APP"
+    maven="SimpleNotes:app:unspecified"
+    agpVersion="8.9.0"
+    buildFolder="build"
+    bootClassPath="/Users/nafismahdee/Library/Android/sdk/platforms/android-34/android.jar:/Users/nafismahdee/Library/Android/sdk/build-tools/35.0.0/core-lambda-stubs.jar"
+    javaSourceLevel="1.8"
+    compileTarget="android-34">
+  <lintOptions
+      abortOnError="true"
+      absolutePaths="true"
+      checkReleaseBuilds="true"
+      explainIssues="true"/>
+  <variant name="release"/>
+</lint-module>

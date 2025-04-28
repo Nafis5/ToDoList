@@ -1,0 +1,51 @@
+com.notes.keepnotes.app-play-services-basement-18.4.0-0 /Users/nafismahdee/.gradle/caches/8.11.1/transforms/017562969c64c6cf81cb823174692990/transformed/play-services-basement-18.4.0/res
+com.notes.keepnotes.app-work-runtime-2.7.0-1 /Users/nafismahdee/.gradle/caches/8.11.1/transforms/022786541acecf3d8c8cc70df0452cee/transformed/work-runtime-2.7.0/res
+com.notes.keepnotes.app-viewpager2-1.0.0-2 /Users/nafismahdee/.gradle/caches/8.11.1/transforms/0e35fb276bed13b77f699dad22d122a8/transformed/viewpager2-1.0.0/res
+com.notes.keepnotes.app-browser-1.4.0-3 /Users/nafismahdee/.gradle/caches/8.11.1/transforms/105000243710cb23026bbdefa67c694e/transformed/browser-1.4.0/res
+com.notes.keepnotes.app-constraintlayout-2.1.4-4 /Users/nafismahdee/.gradle/caches/8.11.1/transforms/10f82a2946eb49a30a7d03f3a7d9d0bf/transformed/constraintlayout-2.1.4/res
+com.notes.keepnotes.app-navigation-fragment-2.5.2-5 /Users/nafismahdee/.gradle/caches/8.11.1/transforms/15d805482289de6f2962afd1cb0a70de/transformed/navigation-fragment-2.5.2/res
+com.notes.keepnotes.app-navigation-common-2.5.2-6 /Users/nafismahdee/.gradle/caches/8.11.1/transforms/1cd31de420ba10876b874a5511d4fc02/transformed/navigation-common-2.5.2/res
+com.notes.keepnotes.app-startup-runtime-1.1.1-7 /Users/nafismahdee/.gradle/caches/8.11.1/transforms/244aaf2ec69d33aab3b6e2320d18d4a8/transformed/startup-runtime-1.1.1/res
+com.notes.keepnotes.app-window-1.0.0-8 /Users/nafismahdee/.gradle/caches/8.11.1/transforms/2513f3b688157ef0552ee32fc46e161e/transformed/window-1.0.0/res
+com.notes.keepnotes.app-lifecycle-process-2.4.1-9 /Users/nafismahdee/.gradle/caches/8.11.1/transforms/32d6d09c5f8b0fa89b216160944d341f/transformed/lifecycle-process-2.4.1/res
+com.notes.keepnotes.app-navigation-ui-2.5.2-10 /Users/nafismahdee/.gradle/caches/8.11.1/transforms/4423ba0c7eb3bcf8039153ff12f47ce8/transformed/navigation-ui-2.5.2/res
+com.notes.keepnotes.app-slidingpanelayout-1.2.0-11 /Users/nafismahdee/.gradle/caches/8.11.1/transforms/45b78766df933991027de850a65e8093/transformed/slidingpanelayout-1.2.0/res
+com.notes.keepnotes.app-play-services-ads-lite-22.1.0-12 /Users/nafismahdee/.gradle/caches/8.11.1/transforms/4d19f30f0ffc12f9f827d3b6f39e6a8a/transformed/play-services-ads-lite-22.1.0/res
+com.notes.keepnotes.app-lifecycle-viewmodel-2.5.1-13 /Users/nafismahdee/.gradle/caches/8.11.1/transforms/612f685d1a93416adfdf5a7a19d05e3d/transformed/lifecycle-viewmodel-2.5.1/res
+com.notes.keepnotes.app-savedstate-1.2.0-14 /Users/nafismahdee/.gradle/caches/8.11.1/transforms/693333a089682fd1ca8bc45a53d2f16a/transformed/savedstate-1.2.0/res
+com.notes.keepnotes.app-recyclerview-1.1.0-15 /Users/nafismahdee/.gradle/caches/8.11.1/transforms/6cc4c80bf402a1deb411e84d91696de8/transformed/recyclerview-1.1.0/res
+com.notes.keepnotes.app-material-1.9.0-16 /Users/nafismahdee/.gradle/caches/8.11.1/transforms/7be61669d1ffd3d01b5b73ec329c2fd6/transformed/material-1.9.0/res
+com.notes.keepnotes.app-emoji2-1.2.0-17 /Users/nafismahdee/.gradle/caches/8.11.1/transforms/7e84a23abc6fb162faaf8daa0c953ebb/transformed/emoji2-1.2.0/res
+com.notes.keepnotes.app-activity-1.6.0-18 /Users/nafismahdee/.gradle/caches/8.11.1/transforms/82ffe09a0bbfd155b8935da3ef7f8dd2/transformed/activity-1.6.0/res
+com.notes.keepnotes.app-drawerlayout-1.1.1-19 /Users/nafismahdee/.gradle/caches/8.11.1/transforms/9618b4c493b3f14072da2667a9f7f612/transformed/drawerlayout-1.1.1/res
+com.notes.keepnotes.app-coordinatorlayout-1.1.0-20 /Users/nafismahdee/.gradle/caches/8.11.1/transforms/9e13466f0278ceb64f3e2f940f350c37/transformed/coordinatorlayout-1.1.0/res
+com.notes.keepnotes.app-fragment-1.5.2-21 /Users/nafismahdee/.gradle/caches/8.11.1/transforms/9e1ec063b0e5b07408f525506e4bc8ee/transformed/fragment-1.5.2/res
+com.notes.keepnotes.app-core-1.9.0-22 /Users/nafismahdee/.gradle/caches/8.11.1/transforms/9e766addace95b80c24a85e17eaf359e/transformed/core-1.9.0/res
+com.notes.keepnotes.app-lifecycle-livedata-core-ktx-2.5.1-23 /Users/nafismahdee/.gradle/caches/8.11.1/transforms/a6ef670eb2fea18e47c93aa5544f7427/transformed/lifecycle-livedata-core-ktx-2.5.1/res
+com.notes.keepnotes.app-annotation-experimental-1.3.0-24 /Users/nafismahdee/.gradle/caches/8.11.1/transforms/a969cf00a2fadd070c512a227d3f8c90/transformed/annotation-experimental-1.3.0/res
+com.notes.keepnotes.app-lifecycle-viewmodel-ktx-2.5.1-25 /Users/nafismahdee/.gradle/caches/8.11.1/transforms/acfa74cba99b6e92d29c7522130487e8/transformed/lifecycle-viewmodel-ktx-2.5.1/res
+com.notes.keepnotes.app-lifecycle-viewmodel-savedstate-2.5.1-26 /Users/nafismahdee/.gradle/caches/8.11.1/transforms/b36f238988d43d3d91e00685cddb8b82/transformed/lifecycle-viewmodel-savedstate-2.5.1/res
+com.notes.keepnotes.app-lifecycle-runtime-ktx-2.5.1-27 /Users/nafismahdee/.gradle/caches/8.11.1/transforms/b662f2a6651fa4781f85a9f5fa615f51/transformed/lifecycle-runtime-ktx-2.5.1/res
+com.notes.keepnotes.app-navigation-runtime-2.5.2-28 /Users/nafismahdee/.gradle/caches/8.11.1/transforms/c175f7a04711ee8bc5a40f6e942486eb/transformed/navigation-runtime-2.5.2/res
+com.notes.keepnotes.app-appcompat-resources-1.6.1-29 /Users/nafismahdee/.gradle/caches/8.11.1/transforms/c4628b597a562b2f8f584efe63de6642/transformed/appcompat-resources-1.6.1/res
+com.notes.keepnotes.app-appcompat-1.6.1-30 /Users/nafismahdee/.gradle/caches/8.11.1/transforms/ceff3e43e4688314399c9350d2e2afa4/transformed/appcompat-1.6.1/res
+com.notes.keepnotes.app-cardview-1.0.0-31 /Users/nafismahdee/.gradle/caches/8.11.1/transforms/d46e6e0f4d19ad2ddaf6ee1af598c802/transformed/cardview-1.0.0/res
+com.notes.keepnotes.app-core-ktx-1.9.0-32 /Users/nafismahdee/.gradle/caches/8.11.1/transforms/d64a082adc19bbd824359cc921ee739c/transformed/core-ktx-1.9.0/res
+com.notes.keepnotes.app-transition-1.4.1-33 /Users/nafismahdee/.gradle/caches/8.11.1/transforms/e761b340528f20b2fc48179dc7286189/transformed/transition-1.4.1/res
+com.notes.keepnotes.app-fragment-ktx-1.5.2-34 /Users/nafismahdee/.gradle/caches/8.11.1/transforms/e9189066477c34b176633a4c0f2f8a6e/transformed/fragment-ktx-1.5.2/res
+com.notes.keepnotes.app-savedstate-ktx-1.2.0-35 /Users/nafismahdee/.gradle/caches/8.11.1/transforms/e954dac14b5b32f8e4aa40c7c9d42262/transformed/savedstate-ktx-1.2.0/res
+com.notes.keepnotes.app-play-services-base-18.0.1-36 /Users/nafismahdee/.gradle/caches/8.11.1/transforms/e97ba0ef1a131816e78a858b24110166/transformed/play-services-base-18.0.1/res
+com.notes.keepnotes.app-activity-ktx-1.6.0-37 /Users/nafismahdee/.gradle/caches/8.11.1/transforms/ea446ca17374034b92f879de81c55993/transformed/activity-ktx-1.6.0/res
+com.notes.keepnotes.app-firebase-common-20.3.3-38 /Users/nafismahdee/.gradle/caches/8.11.1/transforms/eb2f866b21f8c0ffc9a59146fddfe558/transformed/firebase-common-20.3.3/res
+com.notes.keepnotes.app-lifecycle-runtime-2.5.1-39 /Users/nafismahdee/.gradle/caches/8.11.1/transforms/ef750b1897d05c469e28ffeb9dede498/transformed/lifecycle-runtime-2.5.1/res
+com.notes.keepnotes.app-play-services-ads-22.1.0-40 /Users/nafismahdee/.gradle/caches/8.11.1/transforms/f2b4f17e0271f78705d2807951283ef1/transformed/play-services-ads-22.1.0/res
+com.notes.keepnotes.app-lifecycle-livedata-core-2.5.1-41 /Users/nafismahdee/.gradle/caches/8.11.1/transforms/f3846dd2c5e89d5aeb1b6ea0c91fd944/transformed/lifecycle-livedata-core-2.5.1/res
+com.notes.keepnotes.app-emoji2-views-helper-1.2.0-42 /Users/nafismahdee/.gradle/caches/8.11.1/transforms/f8ab8c12c8ce2af492cb569373d4dcd4/transformed/emoji2-views-helper-1.2.0/res
+com.notes.keepnotes.app-google-services-43 /Users/nafismahdee/Documents/todolist app/SimpleNotes/app/build/generated/res/google-services/debug
+com.notes.keepnotes.app-pngs-44 /Users/nafismahdee/Documents/todolist app/SimpleNotes/app/build/generated/res/pngs/debug
+com.notes.keepnotes.app-resValues-45 /Users/nafismahdee/Documents/todolist app/SimpleNotes/app/build/generated/res/resValues/debug
+com.notes.keepnotes.app-packageDebugResources-46 /Users/nafismahdee/Documents/todolist app/SimpleNotes/app/build/intermediates/incremental/debug/packageDebugResources/merged.dir
+com.notes.keepnotes.app-packageDebugResources-47 /Users/nafismahdee/Documents/todolist app/SimpleNotes/app/build/intermediates/incremental/debug/packageDebugResources/stripped.dir
+com.notes.keepnotes.app-debug-48 /Users/nafismahdee/Documents/todolist app/SimpleNotes/app/build/intermediates/merged_res/debug/mergeDebugResources
+com.notes.keepnotes.app-debug-49 /Users/nafismahdee/Documents/todolist app/SimpleNotes/app/src/debug/res
+com.notes.keepnotes.app-main-50 /Users/nafismahdee/Documents/todolist app/SimpleNotes/app/src/main/res
