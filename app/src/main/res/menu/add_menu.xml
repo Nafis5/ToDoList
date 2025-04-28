@@ -3,8 +3,14 @@
     xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
+        android:id="@+id/calenderMenu"
+        android:icon="@drawable/baseline_calendar_month_24"
+        android:title="calender"
+        app:showAsAction="ifRoom" />
+    <item
         android:id="@+id/add"
         android:icon="@drawable/ic_add_black_24dp"
         android:title="Add"
         app:showAsAction="ifRoom" />
+
 </menu>

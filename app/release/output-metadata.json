@@ -4,15 +4,15 @@
     "type": "APK",
     "kind": "Directory"
   },
-  "applicationId": "com.notes.keepnotes",
+  "applicationId": "com.notes.jnotes",
   "variantName": "release",
   "elements": [
     {
       "type": "SINGLE",
       "filters": [],
       "attributes": [],
-      "versionCode": 29,
-      "versionName": "3.9",
+      "versionCode": 53,
+      "versionName": "6.3",
       "outputFile": "app-release.apk"
     }
   ],

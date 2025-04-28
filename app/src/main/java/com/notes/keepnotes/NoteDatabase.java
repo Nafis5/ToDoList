@@ -65,6 +65,25 @@ public class NoteDatabase extends SQLiteOpenHelper {
         Note note= new Note(Long.parseLong(cursor.getString(0)), cursor.getString(1), cursor.getString(2), cursor.getString(3), cursor.getString(4));
        return note;
     }
+    public boolean doesIdExist(long id) {
+        SQLiteDatabase db = this.getReadableDatabase();
+        Cursor cursor = db.query(
+                DATABASE_TABLE,
+                new String[]{KEY_ID},
+                KEY_ID + "=?",
+                new String[]{String.valueOf(id)},
+                null, null, null, null
+        );
+
+        boolean exists = (cursor != null && cursor.getCount() > 0);
+
+        if (cursor != null) {
+            cursor.close();
+        }
+        db.close();
+
+        return exists;
+    }
     public List<Note> getAllNotes(){
         List<Note> allNotes = new ArrayList<>();
         String query = "SELECT * FROM " +DATABASE_TABLE+" ORDER BY "+KEY_ID+" DESC";
@@ -101,5 +120,31 @@ public class NoteDatabase extends SQLiteOpenHelper {
         c.put(KEY_TIME,note.getTime());
         db.update(DATABASE_TABLE,c,KEY_ID+"=?",new String[]{String.valueOf(note.getId())});
 
+    }
+    public List<Note> getNotesByDate(String selectedDate) {
+        List<Note> notesByDate = new ArrayList<>();
+        // SQL query to select notes for the given date
+        String query = "SELECT * FROM " + DATABASE_TABLE + " WHERE " + KEY_DATE + " = ? ORDER BY " + KEY_ID + " DESC";
+        SQLiteDatabase db = this.getReadableDatabase();
+
+        Cursor cursor = db.rawQuery(query, new String[]{selectedDate});
+
+
+
+        if (cursor.moveToFirst()) {
+            do {
+                Note note = new Note();
+                note.setId(Long.parseLong(cursor.getString(0)));   // ID
+                note.setTitle(cursor.getString(1));                // Title
+                note.setContent(cursor.getString(2));              // Content
+                note.setDate(cursor.getString(3));                 // Date
+                note.setTime(cursor.getString(4));                 // Time
+                notesByDate.add(note);
+            } while (cursor.moveToNext());
+        }
+
+        cursor.close(); // Always close the cursor
+        db.close();     // Always close the database connection
+        return notesByDate;
     }
 }

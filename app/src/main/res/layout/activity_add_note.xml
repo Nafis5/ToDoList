@@ -12,48 +12,98 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:background="@color/colorPrimary"
-        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:background="@color/toolbarColor"
+
+
+        android:elevation="4dp"
 
         />
-    <EditText
-        android:id="@+id/noteTitle"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:ems="10"
-        android:hint="Enter Title (Optional)"
-        android:inputType="textPersonName"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
 
-    <EditText
-        android:id="@+id/noteDetails"
-        style="@style/Widget.AppCompat.AutoCompleteTextView"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
-        android:background="@null"
-        android:ems="10"
-        android:gravity="start|top"
-        android:hint="Enter Details"
-        android:inputType="textMultiLine"
-        android:textColorHighlight="#FFFFFF"
-        android:textColorLink="#FFFFFF"
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        android:background="#FFFFFF"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
         app:layout_constraintBottom_toTopOf="@id/adView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/noteTitle"
+        >
+
+        <TextView
+            android:id="@+id/titleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Create Reminder"
+            android:textSize="24sp"
+            android:textColor="#333333"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="24dp"/>
+
+        <EditText
+            android:id="@+id/noteTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Task Title"
+            android:padding="12dp"
+            android:textColorHint="@color/hintTextColor"
+            android:textColor="@color/TextColor"
+            android:layout_below="@id/titleTextView"
+            android:layout_marginBottom="16dp"
+             />
+
+        <EditText
+            android:id="@+id/noteDetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Optional Note"
+            android:padding="12dp"
+            android:textColorHint="@color/hintTextColor"
+            android:textColor="@color/TextColor"
+            android:layout_below="@id/noteTitle"
+            android:layout_marginBottom="16dp"
+             />
+
+        <TextView
+            android:id="@+id/dateTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Date"
+            android:textColor="#333333"
+            android:layout_below="@id/noteDetails"
+            android:layout_marginBottom="8dp"/>
+
+        <Button
+            android:id="@+id/dateButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Choose Date"
+            android:backgroundTint="@color/backGroundColor"
+            android:textColor="@color/TextColor"
+            android:layout_below="@id/dateTextView"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:id="@+id/timeTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Time (Optional)"
+            android:textColor="#333333"
+            android:layout_below="@id/dateButton"
+            android:layout_marginBottom="8dp"/>
+
+        <Button
+            android:id="@+id/timeButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Choose Time"
+            android:backgroundTint="@color/backGroundColor"
+            android:textColor="@color/TextColor"
+            android:layout_below="@id/timeTextView"
+
+            />
 
 
-        />
+    </RelativeLayout>
+
     <com.google.android.gms.ads.AdView
         xmlns:ads="http://schemas.android.com/apk/res-auto"
         android:id="@+id/adView"
