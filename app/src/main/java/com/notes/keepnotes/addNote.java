@@ -225,8 +225,8 @@ public class addNote extends AppCompatActivity {
 
 
                     db.addNote(note);
-                   // Toast.makeText(this, "Task saved", Toast.LENGTH_SHORT).show();
-                    setReminder(selectedDate,selectedTime,(int)note.getId(),note.getTitle(),note.getContent());
+                    Toast.makeText(this, "Task saved", Toast.LENGTH_SHORT).show();
+                    setReminder(selectedDate,selectedTime,(int)db.getLastNoteId(),note.getTitle(),note.getContent());
                     goToMain();
                 }
 

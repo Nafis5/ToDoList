@@ -60,9 +60,10 @@ public class ReminderReceiver extends BroadcastReceiver {
         // Query your database/task list to check if task is completed
         // Return true if completed (skip notification)
         NoteDatabase db = new NoteDatabase(context);
-        if(!db.doesIdExist(taskId)) return true;
+        if(db.doesIdExist(taskId)) return false;
+        else return true;
 
-        return false; // Placeholder (implement your logic)
+
     }
 
     @RequiresPermission(Manifest.permission.POST_NOTIFICATIONS)
@@ -80,7 +81,7 @@ public class ReminderReceiver extends BroadcastReceiver {
         );
 
         // Snooze action (optional)
-        Intent snoozeIntent = new Intent(context, SnoozeReceiver.class);
+       /* Intent snoozeIntent = new Intent(context, SnoozeReceiver.class);
         snoozeIntent.putExtra("TASK_ID", taskId);
         snoozeIntent.putExtra("title", title);
         snoozeIntent.putExtra("content", content);
@@ -91,7 +92,7 @@ public class ReminderReceiver extends BroadcastReceiver {
                 taskId + 1000, // Different requestCode
                 snoozeIntent,
                 PendingIntent.FLAG_UPDATE_CURRENT | PendingIntent.FLAG_IMMUTABLE
-        );
+        );*/
 
         // Build notification
         NotificationCompat.Builder builder = new NotificationCompat.Builder(context, "TaskReminderChannel")
@@ -101,8 +102,8 @@ public class ReminderReceiver extends BroadcastReceiver {
                 .setPriority(NotificationCompat.PRIORITY_HIGH)
                 .setDefaults(NotificationCompat.DEFAULT_ALL)
                 .setContentIntent(contentPendingIntent)
-                .setAutoCancel(true)
-                .addAction(R.drawable.add_vector, "Snooze 5 min", snoozePendingIntent);
+                .setAutoCancel(true);
+              //  .addAction(R.drawable.add_vector, "Snooze 5 min", snoozePendingIntent);
 
         // Show notification
         NotificationManagerCompat.from(context).notify(taskId, builder.build());

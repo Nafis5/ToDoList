@@ -84,6 +84,41 @@ public class NoteDatabase extends SQLiteOpenHelper {
 
         return exists;
     }
+    public long getLastNoteId() {
+        SQLiteDatabase db = this.getReadableDatabase();
+        long lastId = -1; // Default value if no notes are found
+
+        Cursor cursor = db.query(
+                DATABASE_TABLE, // The table to query
+                new String[]{KEY_ID}, // The columns to return (only the ID)
+                null, // The columns for the WHERE clause (no WHERE clause needed)
+                null, // The values for the WHERE clause
+                null, // don't group the rows
+                null, // don't filter by row groups
+                KEY_ID + " DESC", // Order by ID in descending order
+                "1" // Limit to the first result (the highest ID)
+        );
+
+        // Check if the cursor is not null and contains data
+        if (cursor != null && cursor.moveToFirst()) {
+            // Get the index of the KEY_ID column
+            int idColumnIndex = cursor.getColumnIndex(KEY_ID);
+            if (idColumnIndex != -1) {
+                // Retrieve the ID from the cursor
+                lastId = cursor.getLong(idColumnIndex);
+            }
+        }
+
+        // Close the cursor to release resources
+        if (cursor != null) {
+            cursor.close();
+        }
+
+        // Close the database
+        db.close();
+
+        return lastId;
+    }
     public List<Note> getAllNotes(){
         List<Note> allNotes = new ArrayList<>();
         String query = "SELECT * FROM " +DATABASE_TABLE+" ORDER BY "+KEY_ID+" DESC";

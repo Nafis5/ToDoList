@@ -126,7 +126,7 @@ public class MainActivity extends AppCompatActivity implements View.OnLongClickL
         db=new NoteDatabase(this);
         List<Note> notesTemp=db.getAllNotes();
         mFirebaseAnalytics = FirebaseAnalytics.getInstance(this);
-    /*     if(notesTemp.size() >= 4){
+         if(notesTemp.size() >= 4){
              admanager.setAdShowPermission(true);
              Bundle bundle = new Bundle();
              bundle.putString("entry_id", "4th entry");  // Custom parameter for entry ID
@@ -137,13 +137,13 @@ public class MainActivity extends AppCompatActivity implements View.OnLongClickL
          }
          else{
              admanager.setAdShowPermission(false);
-         }*/
-        if(appOpenNumber>=3){
+         }
+       /* if(appOpenNumber>=3){
             admanager.setAdShowPermission(true);
         }
         else{
             admanager.setAdShowPermission(false);
-        }
+        }*/
 
 
         Intent intent = getIntent();

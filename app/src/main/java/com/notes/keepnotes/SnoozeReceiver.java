@@ -14,7 +14,7 @@ import java.util.concurrent.TimeUnit; // For snooze duration clarity
 public class SnoozeReceiver extends BroadcastReceiver {
 
     // Using TimeUnit improves readability for snooze duration
-    private static final long SNOOZE_DURATION_MINUTES = 5;
+    private static final long SNOOZE_DURATION_MINUTES = 30;
     private static final long SNOOZE_DURATION_MS = TimeUnit.MINUTES.toMillis(SNOOZE_DURATION_MINUTES);
 
     @Override
