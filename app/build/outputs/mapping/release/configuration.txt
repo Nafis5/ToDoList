@@ -30,6 +30,7 @@
 -keep class com.notes.keepnotes.MainActivity { <init>(); }
 -keep class com.notes.keepnotes.ReminderActivity { <init>(); }
 -keep class com.notes.keepnotes.ReminderReceiver { <init>(); }
+-keep class com.notes.keepnotes.SnoozeReceiver { <init>(); }
 -keep class com.notes.keepnotes.SplashScreenActivity { <init>(); }
 -keep class com.notes.keepnotes.Subscription { <init>(); }
 -keep class com.notes.keepnotes.addNote { <init>(); }

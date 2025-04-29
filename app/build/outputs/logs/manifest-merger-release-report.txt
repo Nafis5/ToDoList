@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/nafismahdee/Documents/todolist app/SimpleNotes/app/src/main/AndroidManifest.xml:2:1-57:12
-INJECTED from /Users/nafismahdee/Documents/todolist app/SimpleNotes/app/src/main/AndroidManifest.xml:2:1-57:12
-INJECTED from /Users/nafismahdee/Documents/todolist app/SimpleNotes/app/src/main/AndroidManifest.xml:2:1-57:12
-INJECTED from /Users/nafismahdee/Documents/todolist app/SimpleNotes/app/src/main/AndroidManifest.xml:2:1-57:12
+ADDED from /Users/nafismahdee/Documents/todolist app/SimpleNotes/app/src/main/AndroidManifest.xml:2:1-63:12
+INJECTED from /Users/nafismahdee/Documents/todolist app/SimpleNotes/app/src/main/AndroidManifest.xml:2:1-63:12
+INJECTED from /Users/nafismahdee/Documents/todolist app/SimpleNotes/app/src/main/AndroidManifest.xml:2:1-63:12
+INJECTED from /Users/nafismahdee/Documents/todolist app/SimpleNotes/app/src/main/AndroidManifest.xml:2:1-63:12
 MERGED from [androidx.navigation:navigation-ui:2.5.2] /Users/nafismahdee/.gradle/caches/8.11.1/transforms/4423ba0c7eb3bcf8039153ff12f47ce8/transformed/navigation-ui-2.5.2/AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.material:material:1.9.0] /Users/nafismahdee/.gradle/caches/8.11.1/transforms/7be61669d1ffd3d01b5b73ec329c2fd6/transformed/material-1.9.0/AndroidManifest.xml:17:1-26:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] /Users/nafismahdee/.gradle/caches/8.11.1/transforms/10f82a2946eb49a30a7d03f3a7d9d0bf/transformed/constraintlayout-2.1.4/AndroidManifest.xml:2:1-11:12
@@ -14,18 +14,18 @@ MERGED from [com.google.firebase:firebase-auth:22.1.1] /Users/nafismahdee/.gradl
 MERGED from [androidx.navigation:navigation-fragment:2.5.2] /Users/nafismahdee/.gradle/caches/8.11.1/transforms/15d805482289de6f2962afd1cb0a70de/transformed/navigation-fragment-2.5.2/AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.firebase:firebase-analytics:21.3.0] /Users/nafismahdee/.gradle/caches/8.11.1/transforms/f66c238ced4fd3e44b32e3838bd6b125/transformed/firebase-analytics-21.3.0/AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.android.gms:play-services-ads:22.1.0] /Users/nafismahdee/.gradle/caches/8.11.1/transforms/f2b4f17e0271f78705d2807951283ef1/transformed/play-services-ads-22.1.0/AndroidManifest.xml:17:1-25:12
-MERGED from [com.google.android.gms:play-services-ads-lite:22.1.0] /Users/nafismahdee/.gradle/caches/8.11.1/transforms/4d19f30f0ffc12f9f827d3b6f39e6a8a/transformed/play-services-ads-lite-22.1.0/AndroidManifest.xml:17:1-80:12
-MERGED from [com.google.android.ump:user-messaging-platform:3.1.0] /Users/nafismahdee/.gradle/caches/8.11.1/transforms/dbb9f96d1aca3597b485b0123879f4f4/transformed/user-messaging-platform-3.1.0/AndroidManifest.xml:2:1-7:12
-MERGED from [com.google.android.gms:play-services-measurement-api:21.3.0] /Users/nafismahdee/.gradle/caches/8.11.1/transforms/757fdec7066db99704451b3fd8071e0d/transformed/play-services-measurement-api-21.3.0/AndroidManifest.xml:17:1-37:12
-MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] /Users/nafismahdee/.gradle/caches/8.11.1/transforms/df745d101ccb1fbd44b86af987d40110/transformed/firebase-auth-interop-20.0.0/AndroidManifest.xml:2:1-10:12
-MERGED from [com.google.firebase:firebase-installations:17.1.4] /Users/nafismahdee/.gradle/caches/8.11.1/transforms/eee28a6c1da4d51df61d515c73a2b412/transformed/firebase-installations-17.1.4/AndroidManifest.xml:2:1-21:12
-MERGED from [com.google.firebase:firebase-common:20.3.3] /Users/nafismahdee/.gradle/caches/8.11.1/transforms/eb2f866b21f8c0ffc9a59146fddfe558/transformed/firebase-common-20.3.3/AndroidManifest.xml:15:1-39:12
 MERGED from [androidx.viewpager2:viewpager2:1.0.0] /Users/nafismahdee/.gradle/caches/8.11.1/transforms/0e35fb276bed13b77f699dad22d122a8/transformed/viewpager2-1.0.0/AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.firebase:firebase-appcheck-interop:17.0.0] /Users/nafismahdee/.gradle/caches/8.11.1/transforms/9448465933f5b23ad1a70bba26e15a7f/transformed/firebase-appcheck-interop-17.0.0/AndroidManifest.xml:15:1-25:12
 MERGED from [com.google.android.gms:play-services-appset:16.0.1] /Users/nafismahdee/.gradle/caches/8.11.1/transforms/ce6f70299c369ac5bc25688d3095268c/transformed/play-services-appset-16.0.1/AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.android.gms:play-services-auth-api-phone:17.4.0] /Users/nafismahdee/.gradle/caches/8.11.1/transforms/50ef14d009c1bde0cb90ddae925cdb9c/transformed/play-services-auth-api-phone-17.4.0/AndroidManifest.xml:2:1-7:12
 MERGED from [com.google.android.gms:play-services-base:18.0.1] /Users/nafismahdee/.gradle/caches/8.11.1/transforms/e97ba0ef1a131816e78a858b24110166/transformed/play-services-base-18.0.1/AndroidManifest.xml:16:1-24:12
 MERGED from [androidx.fragment:fragment-ktx:1.5.2] /Users/nafismahdee/.gradle/caches/8.11.1/transforms/e9189066477c34b176633a4c0f2f8a6e/transformed/fragment-ktx-1.5.2/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-ads-lite:22.1.0] /Users/nafismahdee/.gradle/caches/8.11.1/transforms/4d19f30f0ffc12f9f827d3b6f39e6a8a/transformed/play-services-ads-lite-22.1.0/AndroidManifest.xml:17:1-80:12
+MERGED from [com.google.android.ump:user-messaging-platform:3.1.0] /Users/nafismahdee/.gradle/caches/8.11.1/transforms/dbb9f96d1aca3597b485b0123879f4f4/transformed/user-messaging-platform-3.1.0/AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.android.gms:play-services-measurement-api:21.3.0] /Users/nafismahdee/.gradle/caches/8.11.1/transforms/757fdec7066db99704451b3fd8071e0d/transformed/play-services-measurement-api-21.3.0/AndroidManifest.xml:17:1-37:12
+MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] /Users/nafismahdee/.gradle/caches/8.11.1/transforms/df745d101ccb1fbd44b86af987d40110/transformed/firebase-auth-interop-20.0.0/AndroidManifest.xml:2:1-10:12
+MERGED from [com.google.firebase:firebase-installations:17.1.4] /Users/nafismahdee/.gradle/caches/8.11.1/transforms/eee28a6c1da4d51df61d515c73a2b412/transformed/firebase-installations-17.1.4/AndroidManifest.xml:2:1-21:12
+MERGED from [com.google.firebase:firebase-common:20.3.3] /Users/nafismahdee/.gradle/caches/8.11.1/transforms/eb2f866b21f8c0ffc9a59146fddfe558/transformed/firebase-common-20.3.3/AndroidManifest.xml:15:1-39:12
 MERGED from [com.google.android.gms:play-services-measurement:21.3.0] /Users/nafismahdee/.gradle/caches/8.11.1/transforms/cb02e5d4e0848d9f393a811ec6c1f0ee/transformed/play-services-measurement-21.3.0/AndroidManifest.xml:17:1-46:12
 MERGED from [com.google.android.gms:play-services-measurement-sdk:21.3.0] /Users/nafismahdee/.gradle/caches/8.11.1/transforms/4328214d5b8c27ce0e3112325bc205d6/transformed/play-services-measurement-sdk-21.3.0/AndroidManifest.xml:17:1-25:12
 MERGED from [com.google.android.gms:play-services-ads-base:22.1.0] /Users/nafismahdee/.gradle/caches/8.11.1/transforms/531316e180234fdf4069dff48b5eb555/transformed/play-services-ads-base-22.1.0/AndroidManifest.xml:2:1-9:12
@@ -63,8 +63,8 @@ MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/nafismahdee/.g
 MERGED from [androidx.recyclerview:recyclerview:1.1.0] /Users/nafismahdee/.gradle/caches/8.11.1/transforms/6cc4c80bf402a1deb411e84d91696de8/transformed/recyclerview-1.1.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/nafismahdee/.gradle/caches/8.11.1/transforms/91f2f06db51bf14d7e35352618799b06/transformed/viewpager-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.customview:customview:1.1.0] /Users/nafismahdee/.gradle/caches/8.11.1/transforms/39f20ba3b8820c7bb4e3dc19e9b4163b/transformed/customview-1.1.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.browser:browser:1.4.0] /Users/nafismahdee/.gradle/caches/8.11.1/transforms/105000243710cb23026bbdefa67c694e/transformed/browser-1.4.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.core:core-ktx:1.9.0] /Users/nafismahdee/.gradle/caches/8.11.1/transforms/d64a082adc19bbd824359cc921ee739c/transformed/core-ktx-1.9.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.browser:browser:1.4.0] /Users/nafismahdee/.gradle/caches/8.11.1/transforms/105000243710cb23026bbdefa67c694e/transformed/browser-1.4.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.transition:transition:1.4.1] /Users/nafismahdee/.gradle/caches/8.11.1/transforms/e761b340528f20b2fc48179dc7286189/transformed/transition-1.4.1/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.work:work-runtime:2.7.0] /Users/nafismahdee/.gradle/caches/8.11.1/transforms/022786541acecf3d8c8cc70df0452cee/transformed/work-runtime-2.7.0/AndroidManifest.xml:17:1-145:12
 MERGED from [androidx.core:core:1.9.0] /Users/nafismahdee/.gradle/caches/8.11.1/transforms/9e766addace95b80c24a85e17eaf359e/transformed/core-1.9.0/AndroidManifest.xml:17:1-30:12
@@ -76,10 +76,10 @@ MERGED from [androidx.savedstate:savedstate-ktx:1.2.0] /Users/nafismahdee/.gradl
 MERGED from [androidx.savedstate:savedstate:1.2.0] /Users/nafismahdee/.gradle/caches/8.11.1/transforms/693333a089682fd1ca8bc45a53d2f16a/transformed/savedstate-1.2.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.cardview:cardview:1.0.0] /Users/nafismahdee/.gradle/caches/8.11.1/transforms/d46e6e0f4d19ad2ddaf6ee1af598c802/transformed/cardview-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.firebase:firebase-components:17.1.0] /Users/nafismahdee/.gradle/caches/8.11.1/transforms/67db2557936d078eecd7d32098353322/transformed/firebase-components-17.1.0/AndroidManifest.xml:15:1-22:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/nafismahdee/.gradle/caches/8.11.1/transforms/dbe6745ac3e9d3b152d303e6d5f9d15c/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:17:1-27:12
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/nafismahdee/.gradle/caches/8.11.1/transforms/d75ed0e5733661bf72131640b0fbcc6f/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/nafismahdee/.gradle/caches/8.11.1/transforms/244aaf2ec69d33aab3b6e2320d18d4a8/transformed/startup-runtime-1.1.1/AndroidManifest.xml:17:1-33:12
 MERGED from [androidx.tracing:tracing:1.0.0] /Users/nafismahdee/.gradle/caches/8.11.1/transforms/3c5210166e1a11daec7768ffb053c192/transformed/tracing-1.0.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/nafismahdee/.gradle/caches/8.11.1/transforms/dbe6745ac3e9d3b152d303e6d5f9d15c/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:17:1-27:12
 MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.5.1] /Users/nafismahdee/.gradle/caches/8.11.1/transforms/a6ef670eb2fea18e47c93aa5544f7427/transformed/lifecycle-livedata-core-ktx-2.5.1/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.lifecycle:lifecycle-livedata:2.1.0] /Users/nafismahdee/.gradle/caches/8.11.1/transforms/e601ecd5cdaaab9b725d9719f7d1566a/transformed/lifecycle-livedata-2.1.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.5.1] /Users/nafismahdee/.gradle/caches/8.11.1/transforms/f3846dd2c5e89d5aeb1b6ea0c91fd944/transformed/lifecycle-livedata-core-2.5.1/AndroidManifest.xml:17:1-24:12
@@ -186,8 +186,8 @@ ADDED from /Users/nafismahdee/Documents/todolist app/SimpleNotes/app/src/main/An
 	android:name
 		ADDED from /Users/nafismahdee/Documents/todolist app/SimpleNotes/app/src/main/AndroidManifest.xml:10:22-76
 application
-ADDED from /Users/nafismahdee/Documents/todolist app/SimpleNotes/app/src/main/AndroidManifest.xml:12:5-55:19
-INJECTED from /Users/nafismahdee/Documents/todolist app/SimpleNotes/app/src/main/AndroidManifest.xml:12:5-55:19
+ADDED from /Users/nafismahdee/Documents/todolist app/SimpleNotes/app/src/main/AndroidManifest.xml:12:5-61:19
+INJECTED from /Users/nafismahdee/Documents/todolist app/SimpleNotes/app/src/main/AndroidManifest.xml:12:5-61:19
 MERGED from [com.google.android.material:material:1.9.0] /Users/nafismahdee/.gradle/caches/8.11.1/transforms/7be61669d1ffd3d01b5b73ec329c2fd6/transformed/material-1.9.0/AndroidManifest.xml:24:5-20
 MERGED from [com.google.android.material:material:1.9.0] /Users/nafismahdee/.gradle/caches/8.11.1/transforms/7be61669d1ffd3d01b5b73ec329c2fd6/transformed/material-1.9.0/AndroidManifest.xml:24:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] /Users/nafismahdee/.gradle/caches/8.11.1/transforms/10f82a2946eb49a30a7d03f3a7d9d0bf/transformed/constraintlayout-2.1.4/AndroidManifest.xml:9:5-20
@@ -198,6 +198,12 @@ MERGED from [com.google.firebase:firebase-auth:22.1.1] /Users/nafismahdee/.gradl
 MERGED from [com.google.firebase:firebase-auth:22.1.1] /Users/nafismahdee/.gradle/caches/8.11.1/transforms/72b183d8723c1408e5185ec65dbf1763/transformed/firebase-auth-22.1.1/AndroidManifest.xml:28:5-73:19
 MERGED from [com.google.firebase:firebase-analytics:21.3.0] /Users/nafismahdee/.gradle/caches/8.11.1/transforms/f66c238ced4fd3e44b32e3838bd6b125/transformed/firebase-analytics-21.3.0/AndroidManifest.xml:7:5-20
 MERGED from [com.google.firebase:firebase-analytics:21.3.0] /Users/nafismahdee/.gradle/caches/8.11.1/transforms/f66c238ced4fd3e44b32e3838bd6b125/transformed/firebase-analytics-21.3.0/AndroidManifest.xml:7:5-20
+MERGED from [com.google.firebase:firebase-appcheck-interop:17.0.0] /Users/nafismahdee/.gradle/caches/8.11.1/transforms/9448465933f5b23ad1a70bba26e15a7f/transformed/firebase-appcheck-interop-17.0.0/AndroidManifest.xml:23:5-20
+MERGED from [com.google.firebase:firebase-appcheck-interop:17.0.0] /Users/nafismahdee/.gradle/caches/8.11.1/transforms/9448465933f5b23ad1a70bba26e15a7f/transformed/firebase-appcheck-interop-17.0.0/AndroidManifest.xml:23:5-20
+MERGED from [com.google.android.gms:play-services-appset:16.0.1] /Users/nafismahdee/.gradle/caches/8.11.1/transforms/ce6f70299c369ac5bc25688d3095268c/transformed/play-services-appset-16.0.1/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-appset:16.0.1] /Users/nafismahdee/.gradle/caches/8.11.1/transforms/ce6f70299c369ac5bc25688d3095268c/transformed/play-services-appset-16.0.1/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-base:18.0.1] /Users/nafismahdee/.gradle/caches/8.11.1/transforms/e97ba0ef1a131816e78a858b24110166/transformed/play-services-base-18.0.1/AndroidManifest.xml:19:5-23:19
+MERGED from [com.google.android.gms:play-services-base:18.0.1] /Users/nafismahdee/.gradle/caches/8.11.1/transforms/e97ba0ef1a131816e78a858b24110166/transformed/play-services-base-18.0.1/AndroidManifest.xml:19:5-23:19
 MERGED from [com.google.android.gms:play-services-ads-lite:22.1.0] /Users/nafismahdee/.gradle/caches/8.11.1/transforms/4d19f30f0ffc12f9f827d3b6f39e6a8a/transformed/play-services-ads-lite-22.1.0/AndroidManifest.xml:50:5-78:19
 MERGED from [com.google.android.gms:play-services-ads-lite:22.1.0] /Users/nafismahdee/.gradle/caches/8.11.1/transforms/4d19f30f0ffc12f9f827d3b6f39e6a8a/transformed/play-services-ads-lite-22.1.0/AndroidManifest.xml:50:5-78:19
 MERGED from [com.google.android.gms:play-services-measurement-api:21.3.0] /Users/nafismahdee/.gradle/caches/8.11.1/transforms/757fdec7066db99704451b3fd8071e0d/transformed/play-services-measurement-api-21.3.0/AndroidManifest.xml:27:5-35:19
@@ -208,12 +214,6 @@ MERGED from [com.google.firebase:firebase-installations:17.1.4] /Users/nafismahd
 MERGED from [com.google.firebase:firebase-installations:17.1.4] /Users/nafismahdee/.gradle/caches/8.11.1/transforms/eee28a6c1da4d51df61d515c73a2b412/transformed/firebase-installations-17.1.4/AndroidManifest.xml:11:5-19:19
 MERGED from [com.google.firebase:firebase-common:20.3.3] /Users/nafismahdee/.gradle/caches/8.11.1/transforms/eb2f866b21f8c0ffc9a59146fddfe558/transformed/firebase-common-20.3.3/AndroidManifest.xml:24:5-37:19
 MERGED from [com.google.firebase:firebase-common:20.3.3] /Users/nafismahdee/.gradle/caches/8.11.1/transforms/eb2f866b21f8c0ffc9a59146fddfe558/transformed/firebase-common-20.3.3/AndroidManifest.xml:24:5-37:19
-MERGED from [com.google.firebase:firebase-appcheck-interop:17.0.0] /Users/nafismahdee/.gradle/caches/8.11.1/transforms/9448465933f5b23ad1a70bba26e15a7f/transformed/firebase-appcheck-interop-17.0.0/AndroidManifest.xml:23:5-20
-MERGED from [com.google.firebase:firebase-appcheck-interop:17.0.0] /Users/nafismahdee/.gradle/caches/8.11.1/transforms/9448465933f5b23ad1a70bba26e15a7f/transformed/firebase-appcheck-interop-17.0.0/AndroidManifest.xml:23:5-20
-MERGED from [com.google.android.gms:play-services-appset:16.0.1] /Users/nafismahdee/.gradle/caches/8.11.1/transforms/ce6f70299c369ac5bc25688d3095268c/transformed/play-services-appset-16.0.1/AndroidManifest.xml:7:5-20
-MERGED from [com.google.android.gms:play-services-appset:16.0.1] /Users/nafismahdee/.gradle/caches/8.11.1/transforms/ce6f70299c369ac5bc25688d3095268c/transformed/play-services-appset-16.0.1/AndroidManifest.xml:7:5-20
-MERGED from [com.google.android.gms:play-services-base:18.0.1] /Users/nafismahdee/.gradle/caches/8.11.1/transforms/e97ba0ef1a131816e78a858b24110166/transformed/play-services-base-18.0.1/AndroidManifest.xml:19:5-23:19
-MERGED from [com.google.android.gms:play-services-base:18.0.1] /Users/nafismahdee/.gradle/caches/8.11.1/transforms/e97ba0ef1a131816e78a858b24110166/transformed/play-services-base-18.0.1/AndroidManifest.xml:19:5-23:19
 MERGED from [com.google.android.gms:play-services-measurement:21.3.0] /Users/nafismahdee/.gradle/caches/8.11.1/transforms/cb02e5d4e0848d9f393a811ec6c1f0ee/transformed/play-services-measurement-21.3.0/AndroidManifest.xml:28:5-44:19
 MERGED from [com.google.android.gms:play-services-measurement:21.3.0] /Users/nafismahdee/.gradle/caches/8.11.1/transforms/cb02e5d4e0848d9f393a811ec6c1f0ee/transformed/play-services-measurement-21.3.0/AndroidManifest.xml:28:5-44:19
 MERGED from [com.google.android.gms:play-services-measurement-sdk:21.3.0] /Users/nafismahdee/.gradle/caches/8.11.1/transforms/4328214d5b8c27ce0e3112325bc205d6/transformed/play-services-measurement-sdk-21.3.0/AndroidManifest.xml:22:5-23:19
@@ -246,10 +246,10 @@ MERGED from [androidx.core:core:1.9.0] /Users/nafismahdee/.gradle/caches/8.11.1/
 MERGED from [androidx.core:core:1.9.0] /Users/nafismahdee/.gradle/caches/8.11.1/transforms/9e766addace95b80c24a85e17eaf359e/transformed/core-1.9.0/AndroidManifest.xml:28:5-89
 MERGED from [androidx.lifecycle:lifecycle-process:2.4.1] /Users/nafismahdee/.gradle/caches/8.11.1/transforms/32d6d09c5f8b0fa89b216160944d341f/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:25:5-35:19
 MERGED from [androidx.lifecycle:lifecycle-process:2.4.1] /Users/nafismahdee/.gradle/caches/8.11.1/transforms/32d6d09c5f8b0fa89b216160944d341f/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:25:5-35:19
-MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/nafismahdee/.gradle/caches/8.11.1/transforms/244aaf2ec69d33aab3b6e2320d18d4a8/transformed/startup-runtime-1.1.1/AndroidManifest.xml:25:5-31:19
-MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/nafismahdee/.gradle/caches/8.11.1/transforms/244aaf2ec69d33aab3b6e2320d18d4a8/transformed/startup-runtime-1.1.1/AndroidManifest.xml:25:5-31:19
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/nafismahdee/.gradle/caches/8.11.1/transforms/dbe6745ac3e9d3b152d303e6d5f9d15c/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/nafismahdee/.gradle/caches/8.11.1/transforms/dbe6745ac3e9d3b152d303e6d5f9d15c/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/nafismahdee/.gradle/caches/8.11.1/transforms/244aaf2ec69d33aab3b6e2320d18d4a8/transformed/startup-runtime-1.1.1/AndroidManifest.xml:25:5-31:19
+MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/nafismahdee/.gradle/caches/8.11.1/transforms/244aaf2ec69d33aab3b6e2320d18d4a8/transformed/startup-runtime-1.1.1/AndroidManifest.xml:25:5-31:19
 MERGED from [androidx.room:room-runtime:2.2.5] /Users/nafismahdee/.gradle/caches/8.11.1/transforms/4e67a49a423786e576e52ee33f895104/transformed/room-runtime-2.2.5/AndroidManifest.xml:24:5-29:19
 MERGED from [androidx.room:room-runtime:2.2.5] /Users/nafismahdee/.gradle/caches/8.11.1/transforms/4e67a49a423786e576e52ee33f895104/transformed/room-runtime-2.2.5/AndroidManifest.xml:24:5-29:19
 	android:extractNativeLibs
@@ -327,9 +327,17 @@ ADDED from /Users/nafismahdee/Documents/todolist app/SimpleNotes/app/src/main/An
 	android:name
 		ADDED from /Users/nafismahdee/Documents/todolist app/SimpleNotes/app/src/main/AndroidManifest.xml:50:27-74
 receiver#com.notes.keepnotes.ReminderReceiver
-ADDED from /Users/nafismahdee/Documents/todolist app/SimpleNotes/app/src/main/AndroidManifest.xml:54:9-54
+ADDED from /Users/nafismahdee/Documents/todolist app/SimpleNotes/app/src/main/AndroidManifest.xml:54:9-55:20
+	android:exported
+		ADDED from /Users/nafismahdee/Documents/todolist app/SimpleNotes/app/src/main/AndroidManifest.xml:54:52-75
 	android:name
 		ADDED from /Users/nafismahdee/Documents/todolist app/SimpleNotes/app/src/main/AndroidManifest.xml:54:19-51
+receiver#com.notes.keepnotes.SnoozeReceiver
+ADDED from /Users/nafismahdee/Documents/todolist app/SimpleNotes/app/src/main/AndroidManifest.xml:57:9-77
+	android:exported
+		ADDED from /Users/nafismahdee/Documents/todolist app/SimpleNotes/app/src/main/AndroidManifest.xml:57:50-74
+	android:name
+		ADDED from /Users/nafismahdee/Documents/todolist app/SimpleNotes/app/src/main/AndroidManifest.xml:57:19-49
 uses-sdk
 INJECTED from /Users/nafismahdee/Documents/todolist app/SimpleNotes/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/nafismahdee/Documents/todolist app/SimpleNotes/app/src/main/AndroidManifest.xml
@@ -354,18 +362,6 @@ MERGED from [com.google.firebase:firebase-analytics:21.3.0] /Users/nafismahdee/.
 MERGED from [com.google.firebase:firebase-analytics:21.3.0] /Users/nafismahdee/.gradle/caches/8.11.1/transforms/f66c238ced4fd3e44b32e3838bd6b125/transformed/firebase-analytics-21.3.0/AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.gms:play-services-ads:22.1.0] /Users/nafismahdee/.gradle/caches/8.11.1/transforms/f2b4f17e0271f78705d2807951283ef1/transformed/play-services-ads-22.1.0/AndroidManifest.xml:21:5-23:52
 MERGED from [com.google.android.gms:play-services-ads:22.1.0] /Users/nafismahdee/.gradle/caches/8.11.1/transforms/f2b4f17e0271f78705d2807951283ef1/transformed/play-services-ads-22.1.0/AndroidManifest.xml:21:5-23:52
-MERGED from [com.google.android.gms:play-services-ads-lite:22.1.0] /Users/nafismahdee/.gradle/caches/8.11.1/transforms/4d19f30f0ffc12f9f827d3b6f39e6a8a/transformed/play-services-ads-lite-22.1.0/AndroidManifest.xml:21:5-44
-MERGED from [com.google.android.gms:play-services-ads-lite:22.1.0] /Users/nafismahdee/.gradle/caches/8.11.1/transforms/4d19f30f0ffc12f9f827d3b6f39e6a8a/transformed/play-services-ads-lite-22.1.0/AndroidManifest.xml:21:5-44
-MERGED from [com.google.android.ump:user-messaging-platform:3.1.0] /Users/nafismahdee/.gradle/caches/8.11.1/transforms/dbb9f96d1aca3597b485b0123879f4f4/transformed/user-messaging-platform-3.1.0/AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.ump:user-messaging-platform:3.1.0] /Users/nafismahdee/.gradle/caches/8.11.1/transforms/dbb9f96d1aca3597b485b0123879f4f4/transformed/user-messaging-platform-3.1.0/AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-measurement-api:21.3.0] /Users/nafismahdee/.gradle/caches/8.11.1/transforms/757fdec7066db99704451b3fd8071e0d/transformed/play-services-measurement-api-21.3.0/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-measurement-api:21.3.0] /Users/nafismahdee/.gradle/caches/8.11.1/transforms/757fdec7066db99704451b3fd8071e0d/transformed/play-services-measurement-api-21.3.0/AndroidManifest.xml:20:5-44
-MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] /Users/nafismahdee/.gradle/caches/8.11.1/transforms/df745d101ccb1fbd44b86af987d40110/transformed/firebase-auth-interop-20.0.0/AndroidManifest.xml:5:5-44
-MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] /Users/nafismahdee/.gradle/caches/8.11.1/transforms/df745d101ccb1fbd44b86af987d40110/transformed/firebase-auth-interop-20.0.0/AndroidManifest.xml:5:5-44
-MERGED from [com.google.firebase:firebase-installations:17.1.4] /Users/nafismahdee/.gradle/caches/8.11.1/transforms/eee28a6c1da4d51df61d515c73a2b412/transformed/firebase-installations-17.1.4/AndroidManifest.xml:5:5-44
-MERGED from [com.google.firebase:firebase-installations:17.1.4] /Users/nafismahdee/.gradle/caches/8.11.1/transforms/eee28a6c1da4d51df61d515c73a2b412/transformed/firebase-installations-17.1.4/AndroidManifest.xml:5:5-44
-MERGED from [com.google.firebase:firebase-common:20.3.3] /Users/nafismahdee/.gradle/caches/8.11.1/transforms/eb2f866b21f8c0ffc9a59146fddfe558/transformed/firebase-common-20.3.3/AndroidManifest.xml:19:5-21:41
-MERGED from [com.google.firebase:firebase-common:20.3.3] /Users/nafismahdee/.gradle/caches/8.11.1/transforms/eb2f866b21f8c0ffc9a59146fddfe558/transformed/firebase-common-20.3.3/AndroidManifest.xml:19:5-21:41
 MERGED from [androidx.viewpager2:viewpager2:1.0.0] /Users/nafismahdee/.gradle/caches/8.11.1/transforms/0e35fb276bed13b77f699dad22d122a8/transformed/viewpager2-1.0.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.viewpager2:viewpager2:1.0.0] /Users/nafismahdee/.gradle/caches/8.11.1/transforms/0e35fb276bed13b77f699dad22d122a8/transformed/viewpager2-1.0.0/AndroidManifest.xml:20:5-22:41
 MERGED from [com.google.firebase:firebase-appcheck-interop:17.0.0] /Users/nafismahdee/.gradle/caches/8.11.1/transforms/9448465933f5b23ad1a70bba26e15a7f/transformed/firebase-appcheck-interop-17.0.0/AndroidManifest.xml:18:5-20:41
@@ -378,6 +374,18 @@ MERGED from [com.google.android.gms:play-services-base:18.0.1] /Users/nafismahde
 MERGED from [com.google.android.gms:play-services-base:18.0.1] /Users/nafismahdee/.gradle/caches/8.11.1/transforms/e97ba0ef1a131816e78a858b24110166/transformed/play-services-base-18.0.1/AndroidManifest.xml:18:5-43
 MERGED from [androidx.fragment:fragment-ktx:1.5.2] /Users/nafismahdee/.gradle/caches/8.11.1/transforms/e9189066477c34b176633a4c0f2f8a6e/transformed/fragment-ktx-1.5.2/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.fragment:fragment-ktx:1.5.2] /Users/nafismahdee/.gradle/caches/8.11.1/transforms/e9189066477c34b176633a4c0f2f8a6e/transformed/fragment-ktx-1.5.2/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.gms:play-services-ads-lite:22.1.0] /Users/nafismahdee/.gradle/caches/8.11.1/transforms/4d19f30f0ffc12f9f827d3b6f39e6a8a/transformed/play-services-ads-lite-22.1.0/AndroidManifest.xml:21:5-44
+MERGED from [com.google.android.gms:play-services-ads-lite:22.1.0] /Users/nafismahdee/.gradle/caches/8.11.1/transforms/4d19f30f0ffc12f9f827d3b6f39e6a8a/transformed/play-services-ads-lite-22.1.0/AndroidManifest.xml:21:5-44
+MERGED from [com.google.android.ump:user-messaging-platform:3.1.0] /Users/nafismahdee/.gradle/caches/8.11.1/transforms/dbb9f96d1aca3597b485b0123879f4f4/transformed/user-messaging-platform-3.1.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.ump:user-messaging-platform:3.1.0] /Users/nafismahdee/.gradle/caches/8.11.1/transforms/dbb9f96d1aca3597b485b0123879f4f4/transformed/user-messaging-platform-3.1.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-measurement-api:21.3.0] /Users/nafismahdee/.gradle/caches/8.11.1/transforms/757fdec7066db99704451b3fd8071e0d/transformed/play-services-measurement-api-21.3.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-api:21.3.0] /Users/nafismahdee/.gradle/caches/8.11.1/transforms/757fdec7066db99704451b3fd8071e0d/transformed/play-services-measurement-api-21.3.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] /Users/nafismahdee/.gradle/caches/8.11.1/transforms/df745d101ccb1fbd44b86af987d40110/transformed/firebase-auth-interop-20.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] /Users/nafismahdee/.gradle/caches/8.11.1/transforms/df745d101ccb1fbd44b86af987d40110/transformed/firebase-auth-interop-20.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-installations:17.1.4] /Users/nafismahdee/.gradle/caches/8.11.1/transforms/eee28a6c1da4d51df61d515c73a2b412/transformed/firebase-installations-17.1.4/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-installations:17.1.4] /Users/nafismahdee/.gradle/caches/8.11.1/transforms/eee28a6c1da4d51df61d515c73a2b412/transformed/firebase-installations-17.1.4/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-common:20.3.3] /Users/nafismahdee/.gradle/caches/8.11.1/transforms/eb2f866b21f8c0ffc9a59146fddfe558/transformed/firebase-common-20.3.3/AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-common:20.3.3] /Users/nafismahdee/.gradle/caches/8.11.1/transforms/eb2f866b21f8c0ffc9a59146fddfe558/transformed/firebase-common-20.3.3/AndroidManifest.xml:19:5-21:41
 MERGED from [com.google.android.gms:play-services-measurement:21.3.0] /Users/nafismahdee/.gradle/caches/8.11.1/transforms/cb02e5d4e0848d9f393a811ec6c1f0ee/transformed/play-services-measurement-21.3.0/AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-measurement:21.3.0] /Users/nafismahdee/.gradle/caches/8.11.1/transforms/cb02e5d4e0848d9f393a811ec6c1f0ee/transformed/play-services-measurement-21.3.0/AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-measurement-sdk:21.3.0] /Users/nafismahdee/.gradle/caches/8.11.1/transforms/4328214d5b8c27ce0e3112325bc205d6/transformed/play-services-measurement-sdk-21.3.0/AndroidManifest.xml:20:5-44
@@ -452,10 +460,10 @@ MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/nafismahdee/.gradle/cach
 MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/nafismahdee/.gradle/caches/8.11.1/transforms/91f2f06db51bf14d7e35352618799b06/transformed/viewpager-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.customview:customview:1.1.0] /Users/nafismahdee/.gradle/caches/8.11.1/transforms/39f20ba3b8820c7bb4e3dc19e9b4163b/transformed/customview-1.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.customview:customview:1.1.0] /Users/nafismahdee/.gradle/caches/8.11.1/transforms/39f20ba3b8820c7bb4e3dc19e9b4163b/transformed/customview-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.browser:browser:1.4.0] /Users/nafismahdee/.gradle/caches/8.11.1/transforms/105000243710cb23026bbdefa67c694e/transformed/browser-1.4.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.browser:browser:1.4.0] /Users/nafismahdee/.gradle/caches/8.11.1/transforms/105000243710cb23026bbdefa67c694e/transformed/browser-1.4.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.core:core-ktx:1.9.0] /Users/nafismahdee/.gradle/caches/8.11.1/transforms/d64a082adc19bbd824359cc921ee739c/transformed/core-ktx-1.9.0/AndroidManifest.xml:5:5-44
 MERGED from [androidx.core:core-ktx:1.9.0] /Users/nafismahdee/.gradle/caches/8.11.1/transforms/d64a082adc19bbd824359cc921ee739c/transformed/core-ktx-1.9.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.browser:browser:1.4.0] /Users/nafismahdee/.gradle/caches/8.11.1/transforms/105000243710cb23026bbdefa67c694e/transformed/browser-1.4.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.browser:browser:1.4.0] /Users/nafismahdee/.gradle/caches/8.11.1/transforms/105000243710cb23026bbdefa67c694e/transformed/browser-1.4.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.transition:transition:1.4.1] /Users/nafismahdee/.gradle/caches/8.11.1/transforms/e761b340528f20b2fc48179dc7286189/transformed/transition-1.4.1/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.transition:transition:1.4.1] /Users/nafismahdee/.gradle/caches/8.11.1/transforms/e761b340528f20b2fc48179dc7286189/transformed/transition-1.4.1/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.work:work-runtime:2.7.0] /Users/nafismahdee/.gradle/caches/8.11.1/transforms/022786541acecf3d8c8cc70df0452cee/transformed/work-runtime-2.7.0/AndroidManifest.xml:21:5-23:41
@@ -478,14 +486,14 @@ MERGED from [androidx.cardview:cardview:1.0.0] /Users/nafismahdee/.gradle/caches
 MERGED from [androidx.cardview:cardview:1.0.0] /Users/nafismahdee/.gradle/caches/8.11.1/transforms/d46e6e0f4d19ad2ddaf6ee1af598c802/transformed/cardview-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [com.google.firebase:firebase-components:17.1.0] /Users/nafismahdee/.gradle/caches/8.11.1/transforms/67db2557936d078eecd7d32098353322/transformed/firebase-components-17.1.0/AndroidManifest.xml:18:5-20:41
 MERGED from [com.google.firebase:firebase-components:17.1.0] /Users/nafismahdee/.gradle/caches/8.11.1/transforms/67db2557936d078eecd7d32098353322/transformed/firebase-components-17.1.0/AndroidManifest.xml:18:5-20:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/nafismahdee/.gradle/caches/8.11.1/transforms/dbe6745ac3e9d3b152d303e6d5f9d15c/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/nafismahdee/.gradle/caches/8.11.1/transforms/dbe6745ac3e9d3b152d303e6d5f9d15c/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/nafismahdee/.gradle/caches/8.11.1/transforms/d75ed0e5733661bf72131640b0fbcc6f/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/nafismahdee/.gradle/caches/8.11.1/transforms/d75ed0e5733661bf72131640b0fbcc6f/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/nafismahdee/.gradle/caches/8.11.1/transforms/244aaf2ec69d33aab3b6e2320d18d4a8/transformed/startup-runtime-1.1.1/AndroidManifest.xml:21:5-23:41
 MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/nafismahdee/.gradle/caches/8.11.1/transforms/244aaf2ec69d33aab3b6e2320d18d4a8/transformed/startup-runtime-1.1.1/AndroidManifest.xml:21:5-23:41
 MERGED from [androidx.tracing:tracing:1.0.0] /Users/nafismahdee/.gradle/caches/8.11.1/transforms/3c5210166e1a11daec7768ffb053c192/transformed/tracing-1.0.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.tracing:tracing:1.0.0] /Users/nafismahdee/.gradle/caches/8.11.1/transforms/3c5210166e1a11daec7768ffb053c192/transformed/tracing-1.0.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/nafismahdee/.gradle/caches/8.11.1/transforms/dbe6745ac3e9d3b152d303e6d5f9d15c/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/nafismahdee/.gradle/caches/8.11.1/transforms/dbe6745ac3e9d3b152d303e6d5f9d15c/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.5.1] /Users/nafismahdee/.gradle/caches/8.11.1/transforms/a6ef670eb2fea18e47c93aa5544f7427/transformed/lifecycle-livedata-core-ktx-2.5.1/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.5.1] /Users/nafismahdee/.gradle/caches/8.11.1/transforms/a6ef670eb2fea18e47c93aa5544f7427/transformed/lifecycle-livedata-core-ktx-2.5.1/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.lifecycle:lifecycle-livedata:2.1.0] /Users/nafismahdee/.gradle/caches/8.11.1/transforms/e601ecd5cdaaab9b725d9719f7d1566a/transformed/lifecycle-livedata-2.1.0/AndroidManifest.xml:20:5-44
@@ -592,6 +600,14 @@ ADDED from [com.google.firebase:firebase-auth:22.1.1] /Users/nafismahdee/.gradle
 		ADDED from [com.google.firebase:firebase-auth:22.1.1] /Users/nafismahdee/.gradle/caches/8.11.1/transforms/72b183d8723c1408e5185ec65dbf1763/transformed/firebase-auth-22.1.1/AndroidManifest.xml:71:17-82
 	android:name
 		ADDED from [com.google.firebase:firebase-auth:22.1.1] /Users/nafismahdee/.gradle/caches/8.11.1/transforms/72b183d8723c1408e5185ec65dbf1763/transformed/firebase-auth-22.1.1/AndroidManifest.xml:70:17-109
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:18.0.1] /Users/nafismahdee/.gradle/caches/8.11.1/transforms/e97ba0ef1a131816e78a858b24110166/transformed/play-services-base-18.0.1/AndroidManifest.xml:20:9-22:45
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:18.0.1] /Users/nafismahdee/.gradle/caches/8.11.1/transforms/e97ba0ef1a131816e78a858b24110166/transformed/play-services-base-18.0.1/AndroidManifest.xml:22:19-43
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:18.0.1] /Users/nafismahdee/.gradle/caches/8.11.1/transforms/e97ba0ef1a131816e78a858b24110166/transformed/play-services-base-18.0.1/AndroidManifest.xml:21:19-78
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:18.0.1] /Users/nafismahdee/.gradle/caches/8.11.1/transforms/e97ba0ef1a131816e78a858b24110166/transformed/play-services-base-18.0.1/AndroidManifest.xml:20:19-85
 uses-permission#android.permission.RECEIVE_BOOT_COMPLETED
 ADDED from [com.google.android.gms:play-services-ads-lite:22.1.0] /Users/nafismahdee/.gradle/caches/8.11.1/transforms/4d19f30f0ffc12f9f827d3b6f39e6a8a/transformed/play-services-ads-lite-22.1.0/AndroidManifest.xml:27:5-29:31
 REJECTED from [androidx.work:work-runtime:2.7.0] /Users/nafismahdee/.gradle/caches/8.11.1/transforms/022786541acecf3d8c8cc70df0452cee/transformed/work-runtime-2.7.0/AndroidManifest.xml:27:5-81
@@ -677,14 +693,6 @@ ADDED from [com.google.firebase:firebase-common:20.3.3] /Users/nafismahdee/.grad
 		ADDED from [com.google.firebase:firebase-common:20.3.3] /Users/nafismahdee/.gradle/caches/8.11.1/transforms/eb2f866b21f8c0ffc9a59146fddfe558/transformed/firebase-common-20.3.3/AndroidManifest.xml:30:13-36
 	android:name
 		ADDED from [com.google.firebase:firebase-common:20.3.3] /Users/nafismahdee/.gradle/caches/8.11.1/transforms/eb2f866b21f8c0ffc9a59146fddfe558/transformed/firebase-common-20.3.3/AndroidManifest.xml:26:13-77
-activity#com.google.android.gms.common.api.GoogleApiActivity
-ADDED from [com.google.android.gms:play-services-base:18.0.1] /Users/nafismahdee/.gradle/caches/8.11.1/transforms/e97ba0ef1a131816e78a858b24110166/transformed/play-services-base-18.0.1/AndroidManifest.xml:20:9-22:45
-	android:exported
-		ADDED from [com.google.android.gms:play-services-base:18.0.1] /Users/nafismahdee/.gradle/caches/8.11.1/transforms/e97ba0ef1a131816e78a858b24110166/transformed/play-services-base-18.0.1/AndroidManifest.xml:22:19-43
-	android:theme
-		ADDED from [com.google.android.gms:play-services-base:18.0.1] /Users/nafismahdee/.gradle/caches/8.11.1/transforms/e97ba0ef1a131816e78a858b24110166/transformed/play-services-base-18.0.1/AndroidManifest.xml:21:19-78
-	android:name
-		ADDED from [com.google.android.gms:play-services-base:18.0.1] /Users/nafismahdee/.gradle/caches/8.11.1/transforms/e97ba0ef1a131816e78a858b24110166/transformed/play-services-base-18.0.1/AndroidManifest.xml:20:19-85
 uses-permission#com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
 ADDED from [com.google.android.gms:play-services-measurement:21.3.0] /Users/nafismahdee/.gradle/caches/8.11.1/transforms/cb02e5d4e0848d9f393a811ec6c1f0ee/transformed/play-services-measurement-21.3.0/AndroidManifest.xml:26:5-110
 MERGED from [com.google.android.gms:play-services-measurement-impl:21.3.0] /Users/nafismahdee/.gradle/caches/8.11.1/transforms/9ca708642c99a60c98514275bb00d0a6/transformed/play-services-measurement-impl-21.3.0/AndroidManifest.xml:26:5-110

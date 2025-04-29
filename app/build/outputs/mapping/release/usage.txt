@@ -23342,10 +23342,6 @@ com.notes.keepnotes.ReminderReceiver:
     private static final int NOTIFICATION_SPACING_MINUTES
 com.notes.keepnotes.SnoozeReceiver:
     private static final long SNOOZE_DURATION_MINUTES
-    private static final long SNOOZE_DURATION_MS
-    static void <clinit>()
-    public void <init>()
-    public void onReceive(android.content.Context,android.content.Intent)
 com.notes.keepnotes.SplashScreenActivity:
     private static final java.lang.String PREF_FIRST_APP_LAUNCH
 com.notes.keepnotes.Subscription:
@@ -32274,7 +32270,7 @@ androidx.core.app.NotificationCompat$Builder:
     public long mTimeout
     public boolean mUseChronometer
     public int mVisibility
-    public final void addAction(int,java.lang.String,android.app.PendingIntent)
+    public static androidx.core.app.NotificationCompat$Builder addAction()
     public final android.os.Bundle getExtras()
     public static androidx.core.app.NotificationCompat$Builder setChannelId()
     public static androidx.core.app.NotificationCompat$Builder setContentIntent()
@@ -32313,7 +32309,7 @@ androidx.core.app.NotificationManagerCompat$Task:
     public abstract void send(android.support.v4.app.INotificationSideChannel)
 androidx.core.app.NotificationManagerCompat:
     public static void cancel()
-    public static void cancel$1()
+    public final void cancel(int)
     public static void notify$1()
     public static void notify$2()
 androidx.core.app.OnMultiWindowModeChangedProvider:
@@ -40260,6 +40256,7 @@ com.notes.keepnotes.Note:
 com.notes.keepnotes.NoteDatabase:
     public static long addNote()
     public static boolean doesIdExist()
+    public static long getLastNoteId()
     public static java.util.List getNotesByDate()
 com.notes.keepnotes.ReminderActivity:
     public final void setReminderInSharedPreferences(boolean)

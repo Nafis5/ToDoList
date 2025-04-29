@@ -145,6 +145,7 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
                        // updateAdapter(notes); // Notify adapter
 
                         notifyDataSetChanged();
+                        itemView.setAlpha(1f);
                     }, 2000); // 2 seconds delay
                 } else {
                     // Reset alpha if unchecked

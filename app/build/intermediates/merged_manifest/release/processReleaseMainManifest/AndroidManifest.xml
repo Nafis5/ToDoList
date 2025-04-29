@@ -88,7 +88,13 @@
             </intent-filter>
         </activity>
 
-        <receiver android:name="com.notes.keepnotes.ReminderReceiver" />
+        <receiver
+            android:name="com.notes.keepnotes.ReminderReceiver"
+            android:exported="true" >
+        </receiver>
+        <receiver
+            android:name="com.notes.keepnotes.SnoozeReceiver"
+            android:exported="false" />
 
         <service
             android:name="com.google.firebase.components.ComponentDiscoveryService"
@@ -143,7 +149,11 @@
                     android:path="/"
                     android:scheme="recaptcha" />
             </intent-filter>
-        </activity> <!-- Include the AdActivity and InAppPurchaseActivity configChanges and themes. -->
+        </activity>
+        <activity
+            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+            android:exported="false"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" /> <!-- Include the AdActivity and InAppPurchaseActivity configChanges and themes. -->
         <activity
             android:name="com.google.android.gms.ads.AdActivity"
             android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
@@ -172,11 +182,6 @@
             android:directBootAware="true"
             android:exported="false"
             android:initOrder="100" />
-
-        <activity
-            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-            android:exported="false"
-            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
 
         <receiver
             android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
