@@ -1,121 +1,104 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
+<androidx.cardview.widget.CardView
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginStart="@dimen/reminder_card_margin_horizontal"
+    android:layout_marginEnd="@dimen/reminder_card_margin_horizontal"
+    android:layout_marginTop="@dimen/reminder_card_margin_vertical"
+    android:layout_marginBottom="@dimen/reminder_card_margin_vertical"
+    app:cardBackgroundColor="@color/reminderItemColor"
+    app:cardCornerRadius="@dimen/card_corner_radius"
+    app:cardElevation="@dimen/card_elevation"
+    app:contentPadding="0dp">
 
-    android:padding="5dp">
-
-
-    <androidx.cardview.widget.CardView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:cardCornerRadius="0dp"
-        app:cardElevation="0dp"
-        app:contentPadding="5dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginBottom="5dp"
-        android:background="@color/backGroundColor"
-
-        />
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@color/noteItemColor"
-        >
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/constraintLayout"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/reminder_padding_horizontal"
+        android:paddingTop="@dimen/reminder_padding_vertical"
+        android:paddingEnd="@dimen/reminder_padding_horizontal"
+        android:paddingBottom="@dimen/reminder_padding_vertical">
+
+        <CheckBox
+            android:id="@+id/check_todo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-
+            android:minWidth="0dp"
+            android:minHeight="0dp"
+            app:buttonTint="@color/checkboxDoneTint"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginStart="@dimen/checkbox_margin" />
 
-            <CheckBox
-                android:id="@+id/check_todo"
-                android:layout_width="60dp"
-                android:layout_height="60dp"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintLeft_toLeftOf="parent"
-                />
-
-
-        </androidx.constraintlayout.widget.ConstraintLayout>
-        <androidx.constraintlayout.widget.ConstraintLayout
+        <TextView
+            android:id="@+id/nTitle"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/constraintLayout"
-            app:layout_constraintTop_toTopOf="parent">
-            <TextView
-                android:id="@+id/nTitle"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="8dp"
-                android:layout_marginEnd="16dp"
-                android:text="Sample Note TItle"
-                android:textAlignment="viewStart"
-                android:textAllCaps="false"
-                android:textColor="@color/TextColor"
-                android:textSize="22sp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+            android:layout_marginStart="@dimen/title_margin_start"
+            android:layout_marginEnd="@dimen/title_margin_end"
+            android:textColor="@color/textColorPrimary"
+            android:textSize="@dimen/title_text_size"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/check_todo"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/check"
+            tools:text="Sample Note Title That Might Be Long" />
 
-            <TextView
-                android:id="@+id/nDate"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="8dp"
-                android:text="created : 7/31/2019"
-                android:textStyle="italic"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/nTitle"
+        <TextView
+            android:id="@+id/nDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/date_margin_top"
+            android:drawableStart="@drawable/ic_calendar_today_24"
+            android:drawablePadding="@dimen/icon_text_padding"
+            android:gravity="center_vertical"
+            android:textColor="@color/reminderDateColor"
+            android:textSize="@dimen/metadata_text_size"
+            app:drawableTint="@color/reminderDateColor"
+            app:layout_constraintStart_toStartOf="@+id/nTitle"
+            app:layout_constraintTop_toBottomOf="@+id/nTitle"
+            tools:text="Jul 31, 2025" />
 
-                />
-            <TextView
-                android:id="@+id/nTime"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="8dp"
-                android:layout_marginEnd="8dp"
-                android:text="08:02"
-                android:textStyle="italic"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toEndOf="@+id/nDate"
-                app:layout_constraintTop_toBottomOf="@+id/nTitle" />
+        <TextView
+            android:id="@+id/nTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/time_margin_start"
+            android:drawableStart="@drawable/ic_clock_time_24"
+            android:drawablePadding="@dimen/icon_text_padding"
+            android:gravity="center_vertical"
+            android:textColor="@color/reminderTimeColor"
+            android:textSize="@dimen/metadata_text_size"
+            app:drawableTint="@color/reminderTimeColor"
+            app:layout_constraintStart_toEndOf="@+id/nDate"
+            app:layout_constraintTop_toTopOf="@+id/nDate"
+            app:layout_constraintBottom_toBottomOf="@+id/nDate"
+            tools:text="08:02 AM" />
 
-
-
-            <TextView
-                android:id="@+id/listId"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="7dp"
-                android:layout_marginTop="20dp"
-                android:layout_marginBottom="20dp"
-                android:text="TextView"
-                android:visibility="gone"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/nTitle"
-                app:layout_constraintTop_toTopOf="parent" />
-
-        </androidx.constraintlayout.widget.ConstraintLayout>
         <CheckBox
             android:id="@+id/check"
             android:layout_width="wrap_content"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
+            android:minWidth="0dp"
+            android:minHeight="0dp"
+            app:buttonTint="@color/checkboxOtherTint"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginEnd="@dimen/checkbox_margin" />
 
-            app:layout_constraintRight_toRightOf="parent"
-            />
+        <TextView
+            android:id="@+id/listId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            tools:text="HiddenID"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
-</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

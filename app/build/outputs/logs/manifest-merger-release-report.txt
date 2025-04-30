@@ -327,7 +327,7 @@ ADDED from /Users/nafismahdee/Documents/todolist app/SimpleNotes/app/src/main/An
 	android:name
 		ADDED from /Users/nafismahdee/Documents/todolist app/SimpleNotes/app/src/main/AndroidManifest.xml:50:27-74
 receiver#com.notes.keepnotes.ReminderReceiver
-ADDED from /Users/nafismahdee/Documents/todolist app/SimpleNotes/app/src/main/AndroidManifest.xml:54:9-55:20
+ADDED from /Users/nafismahdee/Documents/todolist app/SimpleNotes/app/src/main/AndroidManifest.xml:54:9-77
 	android:exported
 		ADDED from /Users/nafismahdee/Documents/todolist app/SimpleNotes/app/src/main/AndroidManifest.xml:54:52-75
 	android:name

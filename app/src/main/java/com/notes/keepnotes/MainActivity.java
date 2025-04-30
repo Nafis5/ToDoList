@@ -8,6 +8,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.app.AppCompatDelegate;
 import androidx.appcompat.widget.SwitchCompat;
 import androidx.appcompat.widget.Toolbar;
+import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
@@ -92,7 +93,7 @@ public class MainActivity extends AppCompatActivity implements View.OnLongClickL
     public NavigationView nav_view;
     private SharedPreferences darkThemesharedPreferences;
     SwitchCompat mySwitch;
-    RelativeLayout PremiumBannerLayout;
+    ConstraintLayout PremiumBannerLayout;
     private AdView mAdView;
     private TextView toolbarTittle;
 
@@ -104,6 +105,7 @@ public class MainActivity extends AppCompatActivity implements View.OnLongClickL
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         setContentView(R.layout.activity_main);
         appOpenCounter = new AppOpenCounter(this);
         AppOpenDateManager appOpenDateManager=new AppOpenDateManager();
@@ -126,7 +128,7 @@ public class MainActivity extends AppCompatActivity implements View.OnLongClickL
         db=new NoteDatabase(this);
         List<Note> notesTemp=db.getAllNotes();
         mFirebaseAnalytics = FirebaseAnalytics.getInstance(this);
-         if(notesTemp.size() >= 4){
+         if(notesTemp.size() >= 3){
              admanager.setAdShowPermission(true);
              Bundle bundle = new Bundle();
              bundle.putString("entry_id", "4th entry");  // Custom parameter for entry ID
@@ -187,7 +189,7 @@ public class MainActivity extends AppCompatActivity implements View.OnLongClickL
         actionBarDrawerToggle = new ActionBarDrawerToggle(this,drawerLayout,R.string.nav_open, R.string.nav_close);
         actionBarDrawerToggle.getDrawerArrowDrawable().setColor(getResources().getColor(R.color.buttonColor));
 
-        actionBarDrawerToggle.setDrawerIndicatorEnabled(true);
+        actionBarDrawerToggle.setDrawerIndicatorEnabled(false);
         drawerLayout.addDrawerListener(actionBarDrawerToggle);
         actionBarDrawerToggle.syncState();
         nav_view = (NavigationView) findViewById(R.id.nav_view);
@@ -204,7 +206,7 @@ public class MainActivity extends AppCompatActivity implements View.OnLongClickL
 
 
         // to make the Navigation drawer icon always appear on the action bar
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+  //      getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         recylerview=findViewById(R.id.allNotesList);
         recylerview.setLayoutManager(new LinearLayoutManager(this));
@@ -597,7 +599,7 @@ public class MainActivity extends AppCompatActivity implements View.OnLongClickL
         }
     }
     public  void clearActionMode(){
-        actionBarDrawerToggle.setDrawerIndicatorEnabled(true);
+      //  actionBarDrawerToggle.setDrawerIndicatorEnabled(true);
         if(is_in_action_mode) {
 
             toolbar.setTitle("");
@@ -606,8 +608,10 @@ public class MainActivity extends AppCompatActivity implements View.OnLongClickL
             toolbar.inflateMenu(R.menu.add_menu);
             counter = 0;
             is_in_action_mode = false;
+
             adapter.notifyDataSetChanged();
             deletelist.clear();
+            getSupportActionBar().setDisplayHomeAsUpEnabled(false);
         }else{
             adapter.updateAdapter(notes);
         }

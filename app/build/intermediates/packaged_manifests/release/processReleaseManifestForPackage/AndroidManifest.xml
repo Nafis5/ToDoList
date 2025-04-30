@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.deaftech.todo"
-    android:versionCode="68"
-    android:versionName="7.8" >
+    android:versionCode="69"
+    android:versionName="7.9" >
 
     <uses-sdk
         android:minSdkVersion="23"
@@ -90,8 +90,7 @@
 
         <receiver
             android:name="com.notes.keepnotes.ReminderReceiver"
-            android:exported="true" >
-        </receiver>
+            android:exported="true" />
         <receiver
             android:name="com.notes.keepnotes.SnoozeReceiver"
             android:exported="false" />

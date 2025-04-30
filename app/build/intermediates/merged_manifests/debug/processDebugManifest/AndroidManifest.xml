@@ -92,8 +92,7 @@
 
         <receiver
             android:name="com.notes.keepnotes.ReminderReceiver"
-            android:exported="true" >
-        </receiver>
+            android:exported="true" />
         <receiver
             android:name="com.notes.keepnotes.SnoozeReceiver"
             android:exported="false" />

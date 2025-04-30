@@ -1,2 +1,0 @@
-#- File Locator -
-listingFile=../../../../../../../SimpleNotes/app/release/output-metadata.json

@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Details"
-    android:background="@color/backGroundColor"
+    android:background="#FFFFFF"
     >
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
@@ -29,7 +29,7 @@
         android:scrollbars="vertical"
         android:text="Sample Text Description"
         android:textAlignment="viewStart"
-        android:textColor="@color/TextColor"
+        android:textColor="@color/textColorPrimary"
         android:textSize="18sp"
         app:layout_constraintBottom_toTopOf="@id/adView2"
         app:layout_constraintEnd_toEndOf="parent"

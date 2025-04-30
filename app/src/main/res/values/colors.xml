@@ -1,15 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#000000</color>
-    <color name="colorPrimaryDark">#000000</color>
-    <color name="colorAccent">#000000</color>
+    <!-- Primary Colors -->
+    <color name="colorPrimary">#4FC3F7</color>
+    <color name="colorPrimaryDark">#03A9F4</color>
+    <color name="colorAccent">#FFAB40</color>
+
+    <!-- Text Colors -->
+    <color name="textColorPrimary">#212121</color>
+    <color name="textColorSecondary">#757575</color>
+    <color name="textColorHint">#BDBDBD</color>
+    <color name="textColorPrimaryInverse">#FFFFFF</color>
+
+    <!-- Background Colors -->
+    <color name="colorBackground">#F5F5F5</color>
+    <color name="colorBackgroundElevated">#FFFFFF</color>
+
+    <!-- Component Colors -->
+    <color name="toolbarColor">@color/colorPrimary</color>
+    <color name="buttonBackgroundColor">@color/colorPrimary</color>
+    <color name="buttonTextColor">@color/textColorPrimaryInverse</color>
+    <color name="dividerColor">#E0E0E0</color>
+
+    <!-- Reminder Colors -->
+    <color name="reminderItemColor">@color/colorBackgroundElevated</color>
+    <color name="reminderDateColor">@color/textColorSecondary</color>
+    <color name="reminderTimeColor">@color/textColorSecondary</color>
+
+    <!-- Checkbox Colors -->
+    <color name="checkboxDoneTint">@color/colorPrimary</color>
+    <color name="checkboxOtherTint">@color/colorAccent</color>
+
+    <!-- Basic Colors -->
+
+    <color name="black">#000000</color>
+
+
+
+
     <color name="white">#FFFFFF</color>
-    <color name="toolbarColor">#FFFFFF</color>
+
     <color name="backGroundColor">#FFFFFF</color>
     <color name="TextColor">#000000</color>
     <color name="noteItemColor">#FAFAFA</color>
     <color name="buttonColor">#1A1A1A</color>
     <color name="hintTextColor">#A9A9A9</color>
-
-
 </resources>

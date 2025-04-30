@@ -51,8 +51,8 @@
             </intent-filter>
         </activity>
 
-        <receiver android:name=".ReminderReceiver" android:exported="true">
-        </receiver>
+        <receiver android:name=".ReminderReceiver" android:exported="true"/>
+
 
         <receiver android:name=".SnoozeReceiver" android:exported="false" />
 

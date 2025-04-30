@@ -2,14 +2,29 @@
 <resources>
     <color name="TextColor">#000000</color>
     <color name="backGroundColor">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="buttonBackgroundColor">@color/colorPrimary</color>
     <color name="buttonColor">#1A1A1A</color>
-    <color name="colorAccent">#000000</color>
-    <color name="colorPrimary">#000000</color>
-    <color name="colorPrimaryDark">#000000</color>
+    <color name="buttonTextColor">@color/textColorPrimaryInverse</color>
+    <color name="checkboxDoneTint">@color/colorPrimary</color>
+    <color name="checkboxOtherTint">@color/colorAccent</color>
+    <color name="colorAccent">#FFAB40</color>
+    <color name="colorBackground">#F5F5F5</color>
+    <color name="colorBackgroundElevated">#FFFFFF</color>
+    <color name="colorPrimary">#4FC3F7</color>
+    <color name="colorPrimaryDark">#03A9F4</color>
+    <color name="dividerColor">#E0E0E0</color>
     <color name="hintTextColor">#A9A9A9</color>
     <color name="ic_launcher_background">#ffffff</color>
     <color name="noteItemColor">#FAFAFA</color>
-    <color name="toolbarColor">#FFFFFF</color>
+    <color name="reminderDateColor">@color/textColorSecondary</color>
+    <color name="reminderItemColor">@color/colorBackgroundElevated</color>
+    <color name="reminderTimeColor">@color/textColorSecondary</color>
+    <color name="textColorHint">#BDBDBD</color>
+    <color name="textColorPrimary">#212121</color>
+    <color name="textColorPrimaryInverse">#FFFFFF</color>
+    <color name="textColorSecondary">#757575</color>
+    <color name="toolbarColor">@color/colorPrimary</color>
     <color name="white">#FFFFFF</color>
     <style name="Theme.AppCompat.DayNight" parent="Theme.AppCompat"/>
     <style name="Theme.AppCompat.DayNight.DarkActionBar" parent="Theme.AppCompat"/>

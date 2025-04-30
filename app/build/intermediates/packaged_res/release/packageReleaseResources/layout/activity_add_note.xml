@@ -4,121 +4,97 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorBackground"
     tools:context=".addNote">
+
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
+        android:background="@color/toolbarColor"
+        android:elevation="4dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:background="@color/toolbarColor"
+        app:titleTextColor="@color/textColorPrimaryInverse"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" /> <RelativeLayout
+    android:id="@+id/contentContainer"
+    android:layout_width="0dp"
+    android:layout_height="0dp" android:padding="16dp"
+    app:layout_constraintTop_toBottomOf="@id/toolbar"
+    app:layout_constraintBottom_toTopOf="@id/adViewContainer"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent">
 
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" android:layout_marginBottom="24dp"
+        android:text="Create Reminder"
+        android:textColor="@color/textColorPrimary" android:textSize="24sp"
+        android:textStyle="bold" /> <EditText
+    android:id="@+id/noteTitle"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/titleTextView"
+    android:layout_marginBottom="16dp"
+    android:background="@drawable/shape_edittext_rounded"
+    android:hint="Task Title"
+    android:inputType="textCapSentences" android:padding="14dp" android:textColor="@color/textColorPrimary" android:textColorHint="@color/textColorHint" /> <EditText
+    android:id="@+id/noteDetails"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/noteTitle"
+    android:layout_marginBottom="24dp" android:background="@drawable/shape_edittext_rounded" android:gravity="top" android:hint="Optional Note"
+    android:inputType="textMultiLine|textCapSentences"
+    android:minLines="3" android:padding="14dp" android:textColor="@color/textColorPrimary" android:textColorHint="@color/textColorHint" /> <TextView
+    android:id="@+id/dateTextView"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/noteDetails"
+    android:layout_marginBottom="8dp"
+    android:text="Select Date"
+    android:textColor="@color/textColorSecondary" /> <Button
+    android:id="@+id/dateButton"
+    style="@style/Widget.AppCompat.Button.Colored" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/dateTextView"
+    android:layout_marginBottom="16dp"
+    android:background="@drawable/ripple_button_background" android:drawableStart="@drawable/ic_calendar_today_24" android:drawablePadding="12dp" android:paddingStart="16dp" android:paddingEnd="16dp"
+    android:text="Choose Date"
+    android:textAlignment="viewStart" android:textColor="@color/buttonTextColor" /> <TextView
+    android:id="@+id/timeTextView"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/dateButton"
+    android:layout_marginBottom="8dp"
+    android:text="Select Time (Optional)"
+    android:textColor="@color/textColorSecondary" /> <Button
+    android:id="@+id/timeButton"
+    style="@style/Widget.AppCompat.Button.Colored" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/timeTextView"
+    android:background="@drawable/ripple_button_background" android:drawableStart="@drawable/ic_clock_time_24" android:drawablePadding="12dp" android:paddingStart="16dp" android:paddingEnd="16dp"
+    android:text="Choose Time"
+    android:textAlignment="viewStart" android:textColor="@color/buttonTextColor" /> </RelativeLayout>
 
-        android:elevation="4dp"
-
-        />
-
-    <RelativeLayout
+    <FrameLayout
+        android:id="@+id/adViewContainer"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:padding="16dp"
-        android:background="#FFFFFF"
-        app:layout_constraintTop_toBottomOf="@id/toolbar"
-        app:layout_constraintBottom_toTopOf="@id/adView"
-        >
-
-        <TextView
-            android:id="@+id/titleTextView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Create Reminder"
-            android:textSize="24sp"
-            android:textColor="#333333"
-            android:layout_alignParentTop="true"
-            android:layout_marginBottom="24dp"/>
-
-        <EditText
-            android:id="@+id/noteTitle"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Task Title"
-            android:padding="12dp"
-            android:textColorHint="@color/hintTextColor"
-            android:textColor="@color/TextColor"
-            android:layout_below="@id/titleTextView"
-            android:layout_marginBottom="16dp"
-             />
-
-        <EditText
-            android:id="@+id/noteDetails"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Optional Note"
-            android:padding="12dp"
-            android:textColorHint="@color/hintTextColor"
-            android:textColor="@color/TextColor"
-            android:layout_below="@id/noteTitle"
-            android:layout_marginBottom="16dp"
-             />
-
-        <TextView
-            android:id="@+id/dateTextView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Select Date"
-            android:textColor="#333333"
-            android:layout_below="@id/noteDetails"
-            android:layout_marginBottom="8dp"/>
-
-        <Button
-            android:id="@+id/dateButton"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Choose Date"
-            android:backgroundTint="@color/backGroundColor"
-            android:textColor="@color/TextColor"
-            android:layout_below="@id/dateTextView"
-            android:layout_marginBottom="16dp"/>
-
-        <TextView
-            android:id="@+id/timeTextView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Select Time (Optional)"
-            android:textColor="#333333"
-            android:layout_below="@id/dateButton"
-            android:layout_marginBottom="8dp"/>
-
-        <Button
-            android:id="@+id/timeButton"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Choose Time"
-            android:backgroundTint="@color/backGroundColor"
-            android:textColor="@color/TextColor"
-            android:layout_below="@id/timeTextView"
-
-            />
-
-
-    </RelativeLayout>
-
-    <com.google.android.gms.ads.AdView
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@color/colorBackgroundElevated"> <com.google.android.gms.ads.AdView
         xmlns:ads="http://schemas.android.com/apk/res-auto"
         android:id="@+id/adView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-
-        ads:adSize="BANNER"
+        android:layout_gravity="center_horizontal|bottom" ads:adSize="BANNER"
         ads:adUnitId="@string/bannerAdID"
-        android:layout_marginTop="7dp"
-        ads:layout_constraintBottom_toBottomOf="parent"
-
-
-        android:gravity="start|top"
-        tools:ignore="MissingConstraints">
-    </com.google.android.gms.ads.AdView>
+        tools:ignore="MissingConstraints" />
+    </FrameLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
